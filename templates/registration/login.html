@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title> Inscri&ccedil;&atilde;o Metodista </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" id="login" href="{{ STATIC_URL }}css/login.css" type="text/css" media="all">
+	<link rel="shortcut icon" type="image/ico" href="{{ STATIC_URL }}images/favicon.ico"/>
+</head>
+
+<body class="login">
+
+	<div id="login">
+		<h1><img src="{{ STATIC_URL }}images/church.png"/>&nbsp; Inscri&ccedil;&atilde;o Metodista </h1> 
+		<br/>
+		<h4 style="font-size: 16px; color: red;"> 
+        
+        <div id="aviso"> 
+            {% if form.errors %}
+           <p>Erro ao efetuar login. Verifique seu {{ form.username.label_tag }} e {{ form.password.label_tag }} e tente novamente</p>
+            {% endif %}
+        </div>  </h4> <br/>
+
+	     <form id="formulario" name="form1" method="post" action="{% url django.contrib.auth.views.login %}">
+          {% csrf_token %}
+			<p>
+                {{ form.username.label_tag }} | <label for="id_username">email</label> <br/>
+                {{ form.username }}
+			</p>
+			<p>
+			
+            {{ form.password.label_tag }} <br/>
+            {{ form.password }}
+            </p>
+
+			<p class="submit">
+				<input value="OK" tabindex="100" type="submit">
+			</p>
+		</form>
+
+		<p id="nav">
+			 &copy; 
+			 <script>
+	 
+				function loginFocus() {
+					document.form1.username.focus();
+        		}
+        		window.onload = loginFocus;
+				var data = new Date();
+				document.write(data.getFullYear());
+	 
+			 </script>
+			  - Inscri&ccedil;&atilde;o Metodista
+		</p>
+
+			<center>
+			<a style="text-decoration: none; color: #464646; font-weight: bold;"  href="/password_reset/">Esqueci minha senha</a>
+			</center><br/>
+			<center>
+			<font style="color: #464646; ">N&atilde;o possui usu&aacute;rio ainda?</font><br>
+			<a style="text-decoration: none; color: #464646; font-weight: bold;"  href="/register/">Clique aqui e cadastre um novo usu&aacute;rio</a>
+			</center>
+	</div>
+
+<center> Em caso de dúvidas ou problemas com o sistema, entre em contato conosco através do email: federacaodejovens@gmail.com</center>
+
+<p id="backtoblog"><a style="left: 15px; " href="#" title="About">Sobre</a><a style="right: 15px; font-weight: bold; " href="/register/">Cadastrar novo usu&aacute;rio</a></p>
+
+
+
+</body>
+</html>
+

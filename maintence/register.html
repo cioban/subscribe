@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title> Novo usu&aacute;rio | Inscri&ccedil;&atilde;o Metodista </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" id="register" href="{{ STATIC_URL }}css/register.css" type="text/css" media="all">
+</head>
+
+<script language="JavaScript">
+<!--
+function districts_info() {janela= window.open('/districtsinfo','districstinfo','width=450,status=no,toolbar=no,location=no,directories=no,resizable=no')}
+-->
+</script>
+
+<body class="register">
+{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+	{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+		{{ error }}
+	{% endfor %}
+{% endif %}
+	<div id="register">
+		<center>
+		<h1> Novo usu&aacute;rio </h1> 
+		<h2> Inscri&ccedil;&atilde;o Metodista </h2> 
+		</center>
+
+{% if email_sent %}
+			<br/>
+			<div align="center"  id="register_info"> 
+				<h2>Usuário cadastrado com sucesso</h2>
+				Para confirmar o seu cadastro,<br/>
+				siga as instruções enviadas para o seu email e efetue login<br/>
+				Verifique a sua caixa SPAM, o email pode estar lá.
+			</div><br/>
+{% endif %}
+{% if user_validated %}
+			<br/>
+			<div align="center"  id="register_info"> 
+				<h2>Confirmação de cadastrado realizada com sucesso</h2>
+				Você já pode realizar login no sistema através do link abaixo<br/>
+				<a style="text-decoration: none; color: #464646; font-weight: bold;"  href="/login/">Clique aqui e efetue login</a>
+			</div><br/>
+{% endif %}
+
+{% if not email_sent and not user_validated %}
+			{% if key_expired %}
+			<br/>
+			<div align="center"  id="register_error">
+				<h2>Erro ao confirmar cadastro</h2>
+				A chave utilizada expirou.<br/>
+				Tente realizar o cadastro novamente.<br/>
+				Caso o problema persista, envie um email para:</br>
+				federacaodejovens@gmail.com
+			</div><br/>
+			{% endif %}
+            {% if form.errors %}
+			<div align="center"  id="register_error"> 
+				<h2>Erro ao cadastrar usu&aacute;rio</h2>
+			</div><br/>
+			{% endif %}
+
+	     <form id="formulario" method="post" action="">
+          {% csrf_token %}
+			<p>
+				<table cellpadding="5" cellspacing="5" width="100%">
+				<tr>
+					<td width="50%">
+						{{ form.username.label_tag }}<br \>
+						{{ form.username }}
+						{% if form.username.errors %}
+						<div id="register_error">
+						{{ form.username.errors }}
+						</div>
+						{% endif %}
+					</td>
+					<td>
+						{{ form.email.label_tag }}<br \>
+						{{ form.email }}
+						{% if form.email.errors %}
+						<div id="register_error">
+						{{ form.email.errors }}
+						</div>
+						{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						{{ form.first_name.label_tag }}<br \>
+						{{ form.first_name }}
+						{% if form.first_name.errors %}
+						<div id="register_error">
+						{{ form.first_name.errors }}
+						</div>
+						{% endif %}
+					</td>
+					<td>
+						{{ form.last_name.label_tag }}<br \>
+						{{ form.last_name }}
+						{% if form.last_name.errors %}
+						<div id="register_error">
+						{{ form.last_name.errors }}
+						</div>
+						{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						{{ form.person_phone.label_tag }}<br \>
+						{{ form.person_phone }}
+						<br/>{{ form.person_phone.help_text }}
+						{% if form.person_phone.errors %}
+						<div id="register_error">
+						{{ form.person_phone.errors }}
+						</div>
+						{% endif %}
+					</td>
+					<td>
+						{{ form.person_cpf.label_tag }}<br \>
+						{{ form.person_cpf }}
+						<br/>{{ form.person_cpf.help_text }}
+						{% if form.person_cpf.errors %}
+						<div id="register_error">
+						{{ form.person_cpf.errors }}
+						</div>
+						{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						{{ form.person_gender.label_tag }}<br \>
+						{{ form.person_gender }}
+						{% if form.person_gender.errors %}
+						<div id="register_error">
+						{{ form.person_gender.errors }}
+						</div>
+						{% endif %}
+					</td>
+					<td>
+						{{ form.person_date.label_tag }}<br/>
+						{{ form.person_date }}
+						{% if form.person_date.errors %}
+						<div id="register_error">
+						{{ form.person_date.errors }}
+						</div><br/>
+						{% endif %}
+					</td>
+				<tr>
+					<td>
+						{{ form.person_city.label_tag }}<br \>
+						{{ form.person_city }}
+						{% if form.person_city.errors %}
+						<div id="register_error">
+						{{ form.person_city.errors }}
+						</div>
+						{% endif %}
+					</td>
+					<td>
+						{{ form.person_state.label_tag }}<br \>
+						{{ form.person_state }}
+						{% if form.person_state.errors %}
+						<div id="register_error">
+						{{ form.person_state.errors }}
+						</div>
+						{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td colspan=2 align="center">
+						{{ form.id_district.label_tag }}<br/>
+						{{ form.id_district }}
+						<br/><a href="JavaScript:districts_info()" style="text-decoration: none; color: #464646; font-weight: bold;">N&atilde;o sabe seu distriro? Clique aqui</a>
+						{% if form.id_district.errors %}
+						<div id="register_error">
+						{{ form.id_district.errors }}
+						</div><br/>
+						{% endif %}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						{{ form.password1.label_tag }}<br \>
+						{{ form.password1 }}
+						{% if form.password1.errors %}
+						<div id="register_error">
+						{{ form.password1.errors }}
+						</div>
+						{% endif %}
+					</td>
+					<td>
+						{{ form.password2.label_tag }}<br \>
+						{{ form.password2 }}
+						{% if form.password2.errors %}
+						<div id="register_error">
+						{{ form.password2.errors }}
+						</div>
+						{% endif %}
+					</td>
+				</tr>
+				</table>
+			</p>
+			<br/>
+			<br/>
+
+			<p class="submit">
+				<input value="Cadastrar novo usu&aacute;rio" tabindex="100" type="submit">
+			</p>
+		</form>
+
+{% endif %}
+		<p id="nav">
+			 &copy;
+			 <script>
+
+			  var data = new Date();
+			  document.write(data.getFullYear());
+
+			 </script>
+			  - Inscri&ccedil;&atilde;o Metodista
+		</p>
+
+			<center>
+			<font style="color: #464646; ">J&aacute; possui usu&aacute;rio?</font><br>
+			<a style="text-decoration: none; color: #464646; font-weight: bold;"  href="/login/">Clique aqui e efetue login</a>
+			</center>
+	</div>
+
+<center> Em caso de dúvidas ou problemas com o sistema, entre em contato conosco através do email: federacaodejovens@gmail.com</center>
+
+<p id="backtoblog"><a style="left: 15px; " href="#" title="About">Sobre</a><a style="right: 60px; font-weight: bold; " href="/register/">Cadastrar novo usu&aacute;rio</a> <a style="right: 15px; font-weight: bold; " href="/login/">login</a></p>
+
+</body>
+</html>
+

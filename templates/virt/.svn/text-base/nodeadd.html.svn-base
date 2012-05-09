@@ -1,0 +1,88 @@
+{% extends "virt/base.html" %}
+{% load i18n %}
+
+<script src="/static/js/jquery-validate/jquery.validate.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/static/css/box.css" type="text/css" media="screen" charset="utf-8">
+
+
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#nodeop').addClass("current_page_item");
+    
+    $('#showhelp').click(function() {       
+       $('#driverhelp').slideDown('normal');        
+    });
+    
+    $('#closehelp').click(function() {       
+       $('#driverhelp').hide();
+    });
+    
+    
+  });
+</script>
+
+<style type="text/css" media="screen">
+    #id_description { width: 300px; }
+    #id_hostname { width: 200px; }
+    #id_uri { width: 400px; }
+     #id_type { width: 200px;}
+</style>
+
+{% load extras %}
+
+<div class="post">
+
+	<div class="post_title"><h2><a href="#">Create Node</a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+	<div class="post_body">
+	
+
+<form class="formx" action="{% url node_add %}" method="post">
+    
+    {% for field in form %}
+    <p>    
+        {{ field.label_tag }} {{ field }} 
+        {% if field.name == 'uri' %} <a href="#" id="showhelp"> {% trans "Help" %} </a>
+          <div class="post_meta" style="font-size: 12px; display:none;" id="driverhelp">
+              <a href="#" id="closehelp" style="float:right;"> {% trans "Close" %} </a>
+              <h3> URI Help </h3>
+      	    <pre>{{ URIHELP }}</pre>
+      	</div>
+        {% endif %}
+        
+         {% if field.errors %}
+            <span class="fielderror"> {% for error in field.errors %} {{ error }} &nbsp; {% endfor %} </span>
+            {% endif %}
+            {% if field.help_text %}
+                <br/><span class="help"> {{ field.help_text }} </span>
+            {% endif %}
+            
+    </p>    
+    {% endfor %}
+    
+           
+    <p>
+        <label for="importdomains"> Import Domains </label>
+        <input type="checkbox" name="importdomains" id="importdomains"/>
+          <br/><span class="help"> {% trans "If checked, the system will list all domain of the node and import them" %}</span>
+    </p>
+        <p>
+          <input class="form_bt_adicionar" type="submit" value="Create" />
+       </p>
+       
+</form>
+ <br/>
+	</div>
+	
+
+
+</div>
+
+
+
+{% endblock %}
+
+

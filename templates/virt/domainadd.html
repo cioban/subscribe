@@ -1,0 +1,67 @@
+{% extends "virt/base.html" %}
+
+
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#domainop').addClass("current_page_item");
+    
+    
+    $('#id_on_poweroff').attr('value', 'destroy');
+    $('#id_on_reboot').attr('value', 'restart');
+    $('#id_on_crash').attr('value', 'restart');
+    
+    
+  });
+</script>
+
+<style type="text/css" media="screen">
+        #id_name, #id_uuid, #id_description {  width: 300px; }
+        #id_memory, #id_currentMemory, #id_vcpus { width: 90px; }
+        #id_os_kernel, #id_os_initrd, #id_os_cmdline { width: 300px;}
+        #id_os_type, #id_os_loader { width: 300px; }
+</style>
+{% load extras %}
+
+<div class="post">
+
+
+	<div class="post_title"><h2><a href="#">Create Domain</a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+	<div class="post_body">
+
+        <form class="formx" action="{% url domain_add %}" method="post">
+
+            {% for field in form %}
+            <p> 
+                {{ field.label_tag }} {{ field }} 
+                {% if field.errors %}
+                <span class="fielderror"> {% for error in field.errors %} {{ error }} &nbsp; {% endfor %} </span>
+                {% endif %}
+                {% if field.help_text %}
+                    <br/><span class="help"> {{ field.help_text }} </span>
+                {% endif %}
+                
+            </p>    
+            {% endfor %}
+        
+             <p>
+                  <input class="form_bt_adicionar" type="submit" value="Create" />
+               </p>
+          
+        </form>
+        	<div class="clearer">&nbsp;</div>
+	</div>
+	
+
+
+</div>
+
+
+
+{% endblock %}
+
+
+

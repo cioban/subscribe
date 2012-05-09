@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#subscribelistop').addClass("current_page_item");
+  });
+</script>
+
+{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+	{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+		{{ error }}
+	{% endfor %}
+{% endif %}
+		<form id="statuspag" method="post" action="">
+		{% csrf_token %}
+		Status de pagamento: {{ form.StatusTransacao }} &nbsp; totalizando {{ count }} registros.<br/>
+		</form>
+
+		<br/><br/>
+		Lista de registros:<br/>
+		{% for subscribe in subscribes %}
+			- {{ subscribe }}<br/>
+		{% endfor %}
+
+{% endblock %}

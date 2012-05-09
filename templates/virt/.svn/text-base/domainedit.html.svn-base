@@ -1,0 +1,303 @@
+{% extends "virt/base.html" %}
+{% load i18n extras %}
+{% block menu2 %}
+		<ul>
+			<li class="current_page_item"><a href="{% url domain_edit domain.id %}"> {% trans "Domain Info" %}</a></li>
+			<li class="current_page_item"><a href=""> &nbsp; {% trans "Transport" %}</a></li>
+			<li class="current_page_item"><a href=""> &nbsp; {% trans "Graphics" %}</a></li>
+		</ul>
+
+{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#domainop').addClass("current_page_item");
+    
+  });
+</script>
+
+
+<style type="text/css" media="screen">
+    #id_name, #id_uuid, #id_description {  width: 300px; }
+    #id_memory, #id_currentMemory, #id_vcpus { width: 90px; }
+    #id_os_kernel, #id_os_initrd, #id_os_cmdline { width: 300px;}
+    #id_os_type, #id_os_loader { width: 300px; }
+</style>
+
+
+<div class="post">
+
+	<div class="post_title"><h2><a href="#">Domain {{ domain.name }}</a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+	<div class="post_body">
+	  	
+        <div class="post_meta" style="font-size: 12px;">
+            <h3> Domain Info </h3>
+             Node: <a href="{% url node_edit domain.node.id %}"> {{ domain.node.name }} </a> <br/>
+    	     Last State {{ domain.get_state_display }} <br/>
+    	     <br/>
+    	     
+
+    	</div>
+    	
+	  	 
+            <input class="form_bt_cancelar" style="float: right;" type="submit" value="{% trans "Destroy" %}" onclick="if (confirm('Confirm Destroy ?')) { 
+            window.location='{% url domain_destroy domain.id %}'}"/>
+            
+            <input class="form_bt_reboot" style="float: right;" type="submit" value="{% trans "Reboot" %}" onclick="if (confirm('Confirm Reboot ?')) { 
+             window.location='{% url domain_reboot domain.id %}'}"/>            
+        
+            <input class="form_bt_alterar" style="float: right;" type="submit" value="{% trans "Shutdown" %}" onclick="if (confirm('Confirm Shutdown ?')) { 
+            window.location='{% url domain_shutdown domain.id %}'}"/>
+                        
+            <input class="form_bt_salvar" style="float: right;" type="submit" value="{% trans "Suspend" %}" onclick="if (confirm('Confirm Suspend ?')) { 
+            window.location='{% url domain_suspend domain.id %}'}"/>
+            <input class="form_bt_ativar" style="float: right;" type="submit" value="{% trans "Resume" %}" onclick="if (confirm('Confirm Resume ?')) { 
+            window.location='{% url domain_resume domain.id %}'}"/>            
+            <input class="form_bt_adicionar" style="float: right;" type="submit" value="{% trans "Create" %}" onclick="if (confirm('Confirm Create ?')) { 
+            window.location='{% url domain_create domain.id %}'}"/>
+            
+            
+        <div class="clear"> &nbsp; </div>    	  	  	  	  
+	  	      
+	    <form class="formx" action="{% url domain_save %}" method="post">
+
+            <input type="hidden" name="id" value="{{ domain.id }}" id="id"/>    
+            {% for field in form %}
+            <p>    
+                {{ field.label_tag }} {{ field }} 
+                 {% if field.errors %}
+                    <span class="fielderror"> {% for error in field.errors %} {{ error }} &nbsp; {% endfor %} </span>
+                    {% endif %}
+                    {% if field.help_text %}
+                        <br/><span class="help"> {{ field.help_text }} </span>
+                    {% endif %}
+            </p>    
+            {% endfor %}
+            
+              <p>
+                  <input class="form_bt_alterar" type="submit" value="Save" />
+               </p>
+        </form>
+    <br/>
+    <br/>
+
+    
+    <h3 class="diskicon"> Disks </h3>
+    <a style="float: right;" href="{% url device_add domain.id 'disk' %}"> {% trans "Add" %} </a>
+    <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+         <th> Device </th>
+         <th> Type </th>        
+         <th> Driver </th>
+         <th> Target </th>
+         <th> Source </th>   
+         <th> Options </th>
+         <th> &nbsp; </th>
+      </tr>
+      {% for disk in domain.getdisk %}
+        <tr>
+              <td> {{ disk.getdict.device }} </td> 
+              <td> {{ disk.getdict.disk_type }} </td>
+              <td> {{ disk.getdict.driver_name }}</td>
+              <td> {% if disk.getdict.target_bus %} {{ disk.getdict.target_bus }} &nbsp; - {% endif %}
+                   {{ disk.getdict.target }}
+              </td>
+              <td> {{ disk.getdict.source }} </td>
+              <td> 
+                    {% if disk.getdict.readonly %} Read Only <br/>{% endif %}
+                    {% if disk.getdict.args %} {{ disk.getdict.args }} {% endif %} 
+              </td>
+              <td> <a class="edit" href="{% url device_edit disk.id %}">&nbsp;</a> 
+                   <a class="remove" href="{% url device_delete disk.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+              </td>
+        </tr>
+      {% endfor %}
+    
+    </table>
+    
+    <br/> 
+
+    <br/>
+      
+    
+    
+
+    <br/>
+    <h3 class="interfaceicon"> Network Interfaces </h3>
+    <a style="float: right;" href="{% url device_add domain.id 'interface' %}"> {% trans "Add" %} </a>
+    <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+         <th> Type </th>
+         <th> Source </th>
+         <th> Target </th>
+         <th> Mac Address </th>
+         <th> Options </th>
+         <th>  &nbsp;  </th>
+    </tr>
+    
+    {% for interface in domain.getinterface %}
+    <tr>
+        <td> {{ interface.getdict.interface_type }} </td>
+        <td> {{ interface.getdict.source }} </td>
+        <td> {{ interface.getdict.target }} </td>
+        <td> {{ interface.getdict.mac|upper }} </td>
+        <td>
+             {% if interface.getdict.other_args %} {{ interface.getdict.other_args }} {% endif %}
+        </td>
+        <td> <a class="edit" href="{% url device_edit interface.id %}">&nbsp;</a> 
+             <a class="remove" href="{% url device_delete interface.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+        </td>
+        
+    </tr>
+
+    {% endfor %}
+    
+    </table>
+    
+    <br/>
+    
+    <br/>
+    <h3 class="graphicsicon"> Graphics </h3>
+    <a style="float: right;" href="{% url device_add domain.id 'graphics' %}"> {% trans "Add" %} </a>
+    <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+         <th> Type </th>
+         <th> Options </th>
+         <th>  &nbsp;  </th>
+    </tr>
+    
+    {% for graphics in domain.getgraphics %}
+    <tr>
+        <td> {{ graphics.getdict.graphics_type }} </td>
+        <td> </td>
+         <td> <a class="edit" href="{% url device_edit graphics.id %}">&nbsp;</a> 
+                 <a class="remove" href="{% url device_delete graphics.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+            </td>
+    </tr>
+
+    {% endfor %}
+    
+    </table>
+    <br/>
+    
+    <h3 class="inputicon"> Inputs </h3>
+    <a style="float: right;" href="{% url device_add domain.id 'input' %}"> {% trans "Add" %} </a>
+    <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+         <th> Type </th>
+         <th> Bus </th>
+         <th>  &nbsp;  </th>
+    </tr>
+    
+    {% for input in domain.getinput %}
+    <tr>
+        <td> {{ input.getdict.input_type }} </td>
+        <td> {{ input.getdict.bus }}</td>
+        <td> <a class="edit" href="{% url device_edit input.id %}">&nbsp;</a> 
+                 <a class="remove" href="{% url device_delete input.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+            </td>
+    </tr>
+
+    {% endfor %}
+    
+    </table>
+    
+    <br/>
+    <h3 class="consoleicon"> Console </h3>
+    <a style="float: right;" href="{% url device_add domain.id 'console' %}"> {% trans "Add" %} </a>
+    <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+         <th> Source </th>
+         <th> Target </th>
+         <th>  &nbsp;  </th>
+    </tr>
+    
+    {% for console in domain.getconsole %}
+    <tr>
+        <td> {{ console.getdict.source }} </td>
+        <td> {{ console.getdict.target }}</td>
+        <td> 
+            <a class="edit" href="{% url device_edit console.id %}">&nbsp;</a> 
+            <a class="remove" href="{% url device_delete console.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+        </td>
+    </tr>
+
+    {% endfor %}
+    
+    </table>
+    
+    
+     <br/>
+    <h3 class="serialicon"> Serial </h3>
+    <a style="float: right;" href="{% url device_add domain.id 'serial' %}"> {% trans "Add" %} </a>
+    <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+     <tr>
+         <th> Source </th>
+         <th> Target </th>
+         <th>  &nbsp;  </th>
+    </tr>
+    
+    {% for serial in domain.getserial %}
+    <tr>
+        <td> {{ serial.getdict.source }} </td>
+        <td> {{ serial.getdict.target }}</td>
+        <td> 
+            <a class="edit" href="{% url device_edit serial.id %}">&nbsp;</a> 
+            <a class="remove" href="{% url device_delete serial.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+        </td>
+    </tr>
+
+    {% endfor %}
+    
+    </table>
+    <br/>
+     
+     <h3 class="emulatoricon"> Emulator </h3>
+     <a style="float: right;" href="{% url device_add domain.id 'emulator' %}"> {% trans "Add" %} </a>
+     <table class="tablex" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+          <th> Path</th>
+          <th>  &nbsp;  </th>
+     </tr>
+
+     {% for emulator in domain.getemulator %}
+     <tr>
+         <td> {{ emulator.getdict.emulator }} </td>
+         <td> 
+             <a class="edit" href="{% url device_edit emulator.id %}">&nbsp;</a> 
+             <a class="remove" href="{% url device_delete emulator.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+         </td>
+     </tr>
+
+     {% endfor %}
+
+     </table>
+     <br/>
+     <br/>
+     
+     
+     
+    
+  <br/><br/>
+
+   
+    </div>
+	 <h3 class="xmlicon"> XML </h3>
+	<div class="post_meta" style="font-size: 12px;">
+	   
+	      <pre>{{ domain.getxml }} </pre>
+	</div>
+
+</div>
+
+<br/>
+<br/>
+<a class="remove" href="{% url domain_delete domain.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> 
+
+{% endblock %}
+
+
+

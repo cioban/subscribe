@@ -30,3 +30,6 @@ pip-log.txt
 *.db
 *.db.*
 *.sql
+*.old
+lista.txt
+pagseguro.txt

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<title> Inscri&ccedil;&atilde;o Metodista </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" id="register" href="{{ STATIC_URL }}css/register.css" type="text/css" media="all">
+</head>
+
+<body class="register">
+
+	<div id="register">
+		<h1> Inscri&ccedil;&atilde;o Metodista </h1> 
+		<br/>
+		<h4 style="font-size: 16px; color: red;"> 
+        
+        <div id="aviso"> 
+            {% if form.errors %}
+           <p>Erro ao efetuar register. Verifique seu {{ form.username.label_tag }} e {{ form.password.label_tag }} e tente novamente</p>
+            {% endif %}
+        </div>  </h4> <br/>
+
+	     <form id="formulario" method="post" action="">
+          {% csrf_token %}
+			<table align="center">
+			{{ form.as_table }}
+			</table>
+			<p>
+            	{{ form.username.label_tag }} <br/>
+                {{ form.username }}
+            </p>
+            <p>
+            	{{ form.email.label_tag }} <br/>
+            	{{ form.email }}
+            </p>
+            <p>
+            	{{ form.first_name.label_tag }} <br/>
+            	{{ form.first_name }}
+            </p>
+            <p>
+            	{{ form.last_name.label_tag }} <br/>
+            	{{ form.last_name }}
+            </p>
+            <p>
+            	{{ form.password1.label_tag }} <br/>
+            	{{ form.password1 }}
+            </p>
+            <p>
+            	{{ form.password2.label_tag }} <br/>
+            	{{ form.password2 }}
+            </p>
+
+
+
+			<p class="submit">
+				<input value="OK" tabindex="100" type="submit">
+			</p>
+		</form>
+
+		<p id="nav">
+			 &copy; 
+			 <script>
+	 
+			  var data = new Date();
+			  document.write(data.getFullYear());
+	 
+			 </script>
+			  - Inscri&ccedil;&atilde;o Metodista
+		</p>
+
+			<center>
+			<font style="color: #464646; ">N&atilde;o possui usu&aacute;rio ainda?</font><br>
+			<a style="text-decoration: none; color: #464646; font-weight: bold;"  href="/register/">Clique aqui e cadastre um novo usu&aacute;rio</a>
+			</center>
+	</div>
+
+
+<p id="backtoblog"><a style="left: 15px; " href="#" title="About">Sobre</a><a style="right: 15px; font-weight: bold; " href="/register/">Cadastrar novo usu&aacute;rio</a></p>
+
+</body>
+</html>
+

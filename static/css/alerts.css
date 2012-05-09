@@ -1,0 +1,118 @@
+body {
+    font-family: Verdana, Tahoma, Verdana, sans-serif;
+    font-size: 15px;
+    
+}
+.aviso_ajaxresquest_erro {
+	padding: 3px;
+	color: red;
+	font-weight: bold;
+}
+
+.alert_action_sucesso_cont {
+ 	width: 300px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	margin-right: -50px;
+	top: 50%;
+	visibility: visible;
+}
+.alert_action_sucesso_titulo {
+	padding: 4px;
+	background-color: #0FBA2E;
+	border-bottom: 1px solid #3a660f;
+	-moz-border-radius: 5px 5px 0px 0px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+.alert_action_erro_titulo {
+	padding: 4px;
+	background-color: #ef0000;
+	border-bottom: 1px solid #c10000;
+	-moz-border-radius: 5px 5px 0px 0px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+
+}
+
+.alert_action_bloqueio_titulo {
+	padding: 4px;
+	background-color: #787b7c;
+	border-bottom: 1px solid #787b7c;
+	-moz-border-radius: 5px 5px 0px 0px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+
+}
+
+.alert_action_manutencao_titulo {
+	padding: 4px;
+	background-color: #a2afd4;
+	border-bottom: 1px solid #a2afd4;
+	-moz-border-radius: 5px 5px 0px 0px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+
+}
+
+
+.alert_action_sucesso_mensagem {
+	padding: 5px;
+	background-color: white;
+	-moz-border-radius: 0px 0px 5px 5px;
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+	border-left: 1px solid #0FBA2E;
+	border-right: 1px solid #0FBA2E;
+	border-bottom: 1px solid #0FBA2E;
+}
+.alert_action_erro_mensagem {
+	padding: 5px;
+	background-color: white;
+	-moz-border-radius: 0px 0px 5px 5px;
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	border-left: 1px solid #ef0000;
+	border-right: 1px solid #ef0000;
+	border-bottom: 1px solid#ef0000;
+}
+
+.alert_action_manutencao_mensagem {
+	padding: 5px;
+	background-color: white;
+	-moz-border-radius: 0px 0px 5px 5px;
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	border-left: 1px solid #a2afd4;
+	border-right: 1px solid #a2afd4;
+	border-bottom: 1px solid #a2afd4;
+}
+
+.alert_action_bloqueio_mensagem {
+	padding: 5px;
+	background-color: white;
+	-moz-border-radius: 0px 0px 5px 5px;
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	border-left: 1px solid #787b7c;
+	border-right: 1px solid #787b7c;
+	border-bottom: 1px solid #787b7c;
+}
+
+
+.alert_action_redireciona {
+	color: gray;
+	font-size: 12px;
+	padding: 5px;
+}
+

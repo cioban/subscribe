@@ -1,0 +1,36 @@
+{% extends "virt/base.html" %}
+{% load i18n %}
+
+{% block menu2 %}
+		<ul>
+			<li><a href="{% url domain_add %}">{% trans "Create Domain" %} </a></li>
+			<li><a href="{% url node_add %}"> {% trans "Create Node" %} </a></li>
+			<li><a href="#">{% trans "Status" %} </a></li>
+		</ul>
+
+{% endblock %}
+  
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#homeop').addClass("current_page_item");
+  });
+</script>
+
+<style type="text/css" media="screen">
+    #q {  width: 300px; }
+    #content { height: 200px;}
+</style>
+
+
+<div id="formsearch" style="width: 400px; float: right;">
+<form class="formx" action="{% url domain_get %}" method="get">
+    
+       <input type="text" name="q" value="" id="q"/> 
+       <input style="float: right;" class="form_bt_adicionar" type="submit" value="Search"/>
+
+</form>
+</div>
+<br/>
+{% endblock %}

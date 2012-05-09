@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<h1>Detalhes da pessoa</h1>
+<p>
+<li>Código: {{ person.id_person }}</li>
+<li>Nome: {{ person.person_name }}</li>
+<li>Email: {{ person.person_email }}</li>
+<li>Nascimento: {{ person.person_date }}</li>
+<li>CPF: {{ person.person_cpf }}</li>
+<li>Estado: {{ person.person_state }}</li>
+<li>Igreja: {{ person.id_church }}</li>
+
+</p>
+
+{% endblock %}

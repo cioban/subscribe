@@ -1,0 +1,102 @@
+{% extends "virt/base.html" %}
+
+{% block menu2 %}
+		<ul>
+			<li><a href="{% url domain_add %}">Create Domain</a></li>
+		</ul>
+
+{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#domainop').addClass("current_page_item");
+  });
+</script>
+
+{% load extras %}
+
+<div class="post">
+
+   	<div class="post_title"><h2><a href="#"> Domains </a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+
+	<div class="post_body">
+        
+        <div class="pagination" style="float: right;">
+            <span class="step-links">
+                {% if domains.has_previous %}
+                    <a href="?page={{ domains.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ domains.number }} of {{ domains.paginator.num_pages }}.
+                </span>
+
+                {% if domains.has_next %}
+                    <a href="?page={{ domains.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+        {{ querycount }} Domains
+        <div class="clearer">&nbsp;</div>
+    	
+    	<table class="tablex" border="0" cellpadding="0" cellspacing="0">
+               <tr>
+                           <th> Name </th>
+                           <th> Memory </th>
+                           <th> Vcpus </th>
+                           <th> OS Type </th>
+                           <th> Domain-0 </th>
+                           <th> State </th>
+                           <th>  </th>
+                </tr>
+                
+                
+                      {% for dom in domains.object_list %}
+                          {% if dom.libvirtdomain.0 %}
+                          <tr>
+                              <td> {{ dom.domain.name }}</td>
+                              <td> {{ dom.libvirtdomain.0.info.1|memorysizeformat:"k" }} MB   </td>
+                              <td> {{ dom.libvirtdomain.0.maxVcpus }} </td>
+                              <td> {{ dom.libvirtdomain.0.OSType|capfirst }} </td>
+                              <td> <a href="{% url node_edit dom.domain.node.id %}">{{ dom.domain.node }}</a></td>
+                              <td> {{ dom.libvirtdomain.0.info.0|libvirtstate }} </td>
+                              <td> <a class="edit" href="{% url domain_edit dom.domain.id %}">&nbsp;</a> <a class="remove" href="{% url domain_delete dom.domain.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a>&nbsp;</td>
+                          </tr>
+                           {% else %}
+                           <tr>
+                               <td> {{ dom.domain.name }}</td>
+
+                               <td> - </td>
+                               <td> - </td>
+                               <td> - </td>
+                               <td> {{ dom.domain.node }}</td>
+                               <td> {% if dom.libvirtdomain.1 %} 
+                                      Domain-0 unavailable
+                                    {% else %}
+                                   Powered Off 
+                                   {% endif %}</td>
+                              <td> <a class="edit" href="{% url domain_edit dom.domain.id %}">&nbsp;</a> <a class="remove" href="{% url domain_delete dom.domain.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a>&nbsp;</td>
+
+                           </tr>
+                           {% endif %}
+                          {% endfor %}
+    
+                      </table>
+    
+	
+	</div>
+	
+	<div class="post_meta">
+	
+	</div>
+
+</div>
+
+
+
+{% endblock %}
+
+

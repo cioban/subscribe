@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Language" content="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	{% block title %}
+		<title>
+			{% if PAGE_NAME %}
+				{{ PAGE_NAME }}&nbsp;|&nbsp;
+			{% endif %}
+			{% if PAGE_TITLE %}
+				{{ PAGE_TITLE }}
+			{% else %}
+				Inscri&ccedil;&atilde;o
+			{% endif %}
+		</title>
+	{% endblock %}
+</head>
+<body>
+	{% block extralink %}
+		{% if user.is_authenticated %}
+			<p align="left">Ol&aacute;, {{ user.username }} - <a href="/logout/">Sair</a></p>
+		{% else %}
+			<p align="left"><a href="/register/">Registrar novo usu&aacute;rio</a> - <a href="/login/">Efetuar login</a></p>
+		{% endif %}
+	{% endblock %}
+	{% block body  %}
+		<!-- body -->
+	{% endblock %}
+</body>
+</html>

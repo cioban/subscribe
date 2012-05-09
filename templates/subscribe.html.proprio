@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#homeop').addClass("current_page_item");
+  });
+</script>
+
+{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+	{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+		{{ error }}
+	{% endfor %}
+{% endif %}
+<!--
+<style type="text/css" media="screen">
+    #content { height: 200px;}
+</style>
+-->
+<h4>Olá, <strong>{{ user.first_name }}&nbsp;{{ user.last_name }}</strong>,<br/>
+Este sistema permite você fazer sua inscrição nos encontros da Federação de Jovens via internet.<br/>
+O pagamento é realizado via PagSeguro podendo ser parcelado via cartão de crédito.</h4>
+<br/>
+{% if eventdata and eventprice %}
+<strong>Confirme os dados abaixo para realizar a inscrição:</strong><br/>
+		<table cellpadding="10" cellspacing="10">
+		<tr>
+			<td><strong>Nome:</strong>&nbsp;</td><td>&nbsp;{{ user.first_name }}&nbsp;{{ user.last_name }}</td>
+		</tr>
+		<tr>
+			<td><strong>CPF:</strong>&nbsp;</td><td>&nbsp;{{ user.userprofile.person_cpf }}</td>
+		</tr>
+		<tr>
+			<td><strong>Encontro:</strong>&nbsp;</td><td>&nbsp;{{ eventdata }}</td>
+		</tr>
+		<tr>
+			<td><strong>Valor do encontro:</strong>&nbsp;</td><td>&nbsp;R$&nbsp;{{ eventprice|floatformat }}</td>
+		</tr>
+		</table>
+<form target="pagseguro" method="post" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
+	<input type="hidden" name="receiverEmail" value="{{ pagseguro_email }}">
+	<input type="hidden" name="currency" value="BRL">
+	<input type="hidden" name="itemId1" value="{{ eventdata.id_event }}">
+	<input type="hidden" name="itemDescription1" value="{{ eventdata }}">
+	<input type="hidden" name="itemQuantity1" value="1">
+	<input type="hidden" name="itemAmount1" value="1.00">
+	<input type="hidden" name="itemWeight1" value="0">
+	<input type="hidden" name="reference" value="{{ reference }}">
+	<input type="hidden" name="encoding" value="UTF-8">
+	<input type="hidden" name="senderEmail" value="{{ user.email }}">
+	<input type="hidden" name="senderName" value="{{ user.first_name }} {{ user.last_name }}">
+
+	<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-pagar-preto-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+</form>
+<strong>ATENÇÃO: Ao clicar no link, você será redirecionado para o site do pagseguro, favor preencher os dados solicitados e efetuar o pagamento.</strong>
+
+	<!-- <input type="hidden" name="itemAmount1" value="{{ eventprice }}"> -->
+
+{% else %}
+	Para prosseguir com a sua inscriçao, selecione um encontro abaixo e clique em avançar:<br/>
+	{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+		{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+			{{ error }}
+		{% endfor %}
+	{% endif %}
+		<form id="formulario" method="post" action="?step=2">
+		{% csrf_token %}
+		{{ form.id_event }}
+		{% if form.id_event.errors %}
+		{{ form.id_event.errors }}
+		{% endif %}
+				<br/>
+				<br/>
+				<p class="submit">
+					<input value="Avan&ccedil;ar -->" tabindex="100" type="submit">
+				</p>
+		</form>
+{% endif %}
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+{% endblock %}

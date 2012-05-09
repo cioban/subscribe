@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#homeop').addClass("current_page_item");
+  });
+</script>
+
+{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+	{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+		{{ error }}
+	{% endfor %}
+{% endif %}
+<!--
+<style type="text/css" media="screen">
+    #content { height: 200px;}
+</style>
+-->
+<h4>Olá, <strong>{{ user.first_name }}&nbsp;{{ user.last_name }}</strong>,<br/>
+Este sistema permite você fazer sua inscrição nos encontros da Federação de Jovens via internet.<br/>
+O pagamento é realizado via PagSeguro podendo ser parcelado via cartão de crédito.</h4>
+<br/>
+{% if eventdata and eventprice %}
+	Confirme os dados abaixo para realizar a inscrição:<br/>
+		<table cellpadding="10" cellspacing="10">
+		<tr>
+			<td>Nome:</td><td>{{ user.first_name }}&nbsp;{{ user.last_name }}</td>
+		</tr>
+		<tr>
+			<td>CPF:</td><td>{{ user.userprofile.person_cpf }}</td>
+		</tr>
+		<tr>
+			<td>Encontro:</td><td>{{ eventdata }}</td>
+		</tr>
+		<tr>
+			<td>Valor do encontro:</td><td>{{ eventprice }}</td>
+		</tr>
+		</table>
+		<br/>
+
+
+{% autoescape off %}
+{{ pagsegurodata }}
+{% endautoescape %}
+
+
+{% else %}
+	Para prosseguir com a sua inscriçao, selecione um encontro abaixo e clique em avançar:<br/>
+	{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+		{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+			{{ error }}
+		{% endfor %}
+	{% endif %}
+		<form id="formulario" method="post" action="?step=2">
+		{% csrf_token %}
+		{{ form.id_event }}
+		{% if form.id_event.errors %}
+		{{ form.id_event.errors }}
+		{% endif %}
+				<br/>
+				<br/>
+				<p class="submit">
+					<input value="Realiizar inscri&ccedil;&atilde;o" tabindex="100" type="submit">
+				</p>
+		</form>
+{% endif %}
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+{% endblock %}

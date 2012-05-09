@@ -1,0 +1,275 @@
+.form_bt_consultar {
+	border: 1px solid #8c7d93;
+	background-color: #8c7d93;
+	padding: 3px;
+	color: white;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left;
+}
+.form_bt_consultar:hover {
+	border: 1px solid #64556b;
+	background-color: #64556b;
+}
+
+.form_bt_adicionar {
+	border: 1px solid #37709f;
+	background-color: #37709f;
+	padding: 3px;
+	color: white;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left;
+}
+.form_bt_adicionar:hover {
+	border: 1px solid #265176;
+	background-color: #265176;
+}
+
+
+
+.form_bt_salvar {
+	border: 1px solid #fddc23;
+	background-color: #fddc23;
+	padding: 3px;
+	color: black;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left
+}
+.form_bt_salvar:hover {
+	border: 1px solid #d2ba32;
+	background-color: #d2ba32;
+}
+
+.form_bt_alterar {
+	border: 1px solid #ff9000;
+	background-color: #ff9000;
+	padding: 3px;
+	color: white;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left
+}
+.form_bt_alterar:hover {
+	border: 1px solid #ff5a00;
+	background-color: #ff5a00;
+}
+.form_bt_cancelar {
+	border: 1px solid #cb1111;
+	background-color: #cb1111;
+	padding: 3px;
+	color: white;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left
+}
+.form_bt_cancelar:hover {
+	border: 1px solid #9a1313;
+	background-color: #9a1313;
+}
+
+.form_bt_ativar {
+	border: 1px solid #93c192;
+	background-color: #93c192;
+	padding: 3px;
+	color: white;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left
+}
+
+.form_bt_ativar:hover {
+	border: 1px solid #678866;
+	background-color: #678866;
+}
+
+
+.form_bt_reboot {
+	border: 1px solid #3375ac;
+	background-color: #3375ac;
+	padding: 3px;
+	color: white;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 10px;
+	float: left
+}
+
+.form_bt_reboot:hover {
+	border: 1px solid #204a6d;
+	background-color: #204a6d;
+}
+
+
+.dialogunknown {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.dialogok {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF URL('../images/dialog-ok.png') left center no-repeat;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+
+.dialoghe {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF URL('../images/dialog-heheheh.png') left center no-repeat;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.etherinfo {
+    background: url('../images/ethernet-icon2.png') no-repeat;
+    padding: 20px;
+    position: relative;
+    float: left;
+
+}
+
+.dialogcancel {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF URL('../images/dialog-cancel.png') left center no-repeat;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.dialogerror {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF URL('../images/dialog-error.png') left center no-repeat;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.dialoginfo {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF URL('../images/dialog-information.png') left center no-repeat;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.dialogwarning {
+  margin: 0 auto 0.5em auto;
+  padding: 15px 10px 15px 55px;
+  border: 1px solid #dcdcdc;
+  background: #FFFFFF URL('../images/dialog-warning.png') left center no-repeat;
+  width: 450px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+
+.xmlicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/xmlicon.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+.diskicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/harddisk.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+.consoleicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/console.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+.emulatoricon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/emulatoricon.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+.serialicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/serialicon.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+.inputicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/inputicon.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+
+.graphicsicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/graphicsicon.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+
+.interfaceicon { 
+  padding: 15px 10px 15px 55px;
+  border: 0px;
+  background: #FFFFFF URL('../images/ethernet-icon.png') left no-repeat;
+  font-size: 20px;
+  color: #445566;
+}
+
+
+
+
+
+
+

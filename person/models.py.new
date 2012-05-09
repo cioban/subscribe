@@ -1,0 +1,24 @@
+# -*- encoding: utf-8 -*-
+
+from django.db import models
+from django.contrib.localflavor.br.forms import BRCPFField, BRPhoneNumberField, BRZipCodeField, BRStateSelect
+from django.forms import DateField, DateInput
+
+class personData(models.Model):
+	id_person		= models.AutoField(max_length=11, primary_key=True)
+	id_church		= models.ForeignKey('church.churchData', db_column='id_church', verbose_name="Igreja")
+	person_name		= models.CharField(max_length=255, verbose_name="Nome")
+	person_email	= models.EmailField(max_length=100, verbose_name="Email")
+	person_date		= DateField(label="Data de nascimento",help_text="Formato: DD/MM/AAAA")
+	person_cpf		= BRCPFField(label=u'CPF',help_text=u"Informe o CPF")
+	person_phone	= BRPhoneNumberField(label=u'Telefone', help_text=u'Numero de telefone para contato. Formato: XX-XXXX-XXXX')
+	person_zipcode	= BRZipCodeField(label=u'CEP', help_text=u'Informe o CEP. Formato: XXXXX-XXX')
+	person_state	= BRStateSelect()
+	person_addr		= models.TextField(verbose_name="Endereço",help_text="Informe o endere&ccedil;o completo")
+
+	class Meta:
+		db_table = 'person'
+
+	def __unicode__(self):
+		return self.person_name
+

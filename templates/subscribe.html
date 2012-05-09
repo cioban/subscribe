@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#homeop').addClass("current_page_item");
+  });
+</script>
+
+{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+	{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+		{{ error }}
+	{% endfor %}
+{% endif %}
+<!--
+<style type="text/css" media="screen">
+    #content { height: 200px;}
+</style>
+-->
+<h4>Olá, <strong>{{ user.first_name }}&nbsp;{{ user.last_name }}</strong>.</h4>
+<br/>
+
+
+{% if eventdata and eventprice and reference %}
+	{% if event_subscribe %}
+		<strong>Você já está inscrito no encontro, confira os dados:</strong><br/>
+				<table cellpadding="10" cellspacing="10">
+				<tr>
+					<td><strong>Nome:</strong>&nbsp;</td><td>&nbsp;{{ user.first_name }}&nbsp;{{ user.last_name }}</td>
+				</tr>
+				<tr>
+					<td><strong>CPF:</strong>&nbsp;</td><td>&nbsp;{{ user.userprofile.person_cpf }}</td>
+				</tr>
+				<tr>
+					<td><strong>Encontro:</strong>&nbsp;</td><td>&nbsp;{{ eventdata }}</td>
+				</tr>
+				<tr>
+					<td><strong>Valor pago na inscrição:</strong>&nbsp;</td><td>&nbsp;R$&nbsp;{{ eventprice }}</td>
+				</tr>
+				<tr>
+					<td><strong>Forma de pagamento:</strong>&nbsp;</td><td>&nbsp;{{ event_subscribe.TipoPagamento }}</td>
+				</tr>
+				<tr>
+					<td><strong>Status do pagamento:</strong>&nbsp;</td><td>&nbsp;{{ event_subscribe.StatusTransacao }}</td>
+				</tr>
+				<tr>
+					<td><strong>Código de inscrição:</strong>&nbsp;</td><td>&nbsp;{{ event_subscribe.TransacaoID }}</td>
+				</tr>
+				</table>
+				<strong>ATENÇÃO: Se o seu pagamento já estiver confirmado ou completo, no dia do encontro, basta informar o seu CPF ou o código de inscrição.</strong>
+				{% if event_subscribe.TipoPagamento == "federacao_deposito" or event_subscribe.TipoPagamento == "Federação depósito" %}
+					<br/><br/>
+					<strong>Dados para depósito:</strong><br>
+					<i>
+					BANCO BRADESCO<br/>
+					ASSOCIAÇÃO DA IGREJA METODISTA - 6ª Região Eclesiástica<br/>
+					AGÊNCIA: 0051-5 – Cornélio Procópio<br/>
+					C/CORRENTE: 79486-4<br/>
+					</i>
+				{% endif %}
+
+	{% else %}
+		{% if pagseguro_email %}
+			<h4>..:: Pagamento via PagSeguro ::..</h4>
+		{% else %}
+			<h4>..:: Pagamento via depósito bancário direto para a federação ::..</h4>
+		{% endif %}
+			<strong>Confirme os dados abaixo para realizar a inscrição:</strong><br/>
+					<table cellpadding="10" cellspacing="10">
+					<tr>
+						<td><strong>Nome:</strong>&nbsp;</td><td>&nbsp;{{ user.first_name }}&nbsp;{{ user.last_name }}</td>
+					</tr>
+					<tr>
+						<td><strong>CPF:</strong>&nbsp;</td><td>&nbsp;{{ user.userprofile.person_cpf }}</td>
+					</tr>
+					<tr>
+						<td><strong>Encontro:</strong>&nbsp;</td><td>&nbsp;{{ eventdata }}</td>
+					</tr>
+					<tr>
+						<td><strong>Valor do encontro:</strong>&nbsp;</td><td>&nbsp;R$&nbsp;{{ eventprice }}</td>
+					</tr>
+					</table>
+		{% if pagseguro_email %}
+			<form id="pagForm" method="post" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
+				<input type="hidden" name="receiverEmail" value="{{ pagseguro_email }}">
+				<input type="hidden" name="currency" value="BRL">
+				<input type="hidden" name="itemId1" value="{{ eventdata.id_event }}">
+				<input type="hidden" name="itemDescription1" value="{{ eventdata }}">
+				<input type="hidden" name="itemQuantity1" value="1">
+				<input type="hidden" name="itemAmount1" value="{{ eventprice_pag }}">
+				<input type="hidden" name="itemWeight1" value="0">
+				<input type="hidden" name="reference" value="{{ reference }}">
+				<input type="hidden" name="encoding" value="UTF-8">
+				<input type="hidden" name="senderEmail" value="{{ user.email }}">
+				<input type="hidden" name="senderName" value="{{ user.first_name }} {{ user.last_name }}">
+				<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-pagar-preto-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
+			</form>
+			<strong>ATENÇÃO: Ao clicar no link, você será redirecionado para o site do pagseguro, favor preencher os dados solicitados e efetuar o pagamento.</strong>
+			<!-- <input type="hidden" name="itemAmount1" value="1.00"> -->
+		{% else %}
+			<br/>
+			<strong>Dados para depósito:</strong><br>
+			<i>
+			BANCO BRADESCO<br/>
+			ASSOCIAÇÃO DA IGREJA METODISTA - 6ª Região Eclesiástica<br/>
+			AGÊNCIA: 0051-5 – Cornélio Procópio<br/>
+			C/CORRENTE: 79486-4<br/>
+			</i>
+			<br/>
+			<form id="pagForm1" method="POST" action="?step=3">
+				{% csrf_token %}
+				<input type="hidden" name="subscribe_amount" value="1">
+				<input type="hidden" name="event_price" value="{{ eventprice_pag }}">
+				<input type="hidden" name="reference" value="{{ reference }}">
+				<input type="hidden" name="id_event" value="{{ eventdata.id_event }}">
+				<input type="hidden" name="pay_choice" value="{{ pay_choice }}">
+				<p class="submit">
+					<input value="Inscrever" tabindex="100" type="submit">
+				</p>
+			</form>
+			<strong>ATENÇÃO: O seu depósito será validado manualmente, somente após esta etapa, o seu pagamento será confirmado.</strong>
+		{% endif %}
+	{% endif %}
+{% endif %}
+
+
+{% if not eventdata and not eventprice and not pagseguro_email and not reference %}
+<h3>
+Este sistema permite você fazer sua inscrição nos encontros da Federação de Jovens via internet.<br/>
+O pagamento pode ser parcelado via cartão de crédito.</h3>
+<strong><i>ATENÇÃO: Para pagamento em cartão de crédito, escolha a forma de pagamento: 'via Pagseguro'</i></strong><br/>
+<br/>
+	Para prosseguir com a sua inscriçao, selecione abaixo, um encontro, a forma de pagamento e clique em avançar:<br/>
+	{% if form.non_field_errors or form.this_is_the_login_form.errors %}
+		{% for error in form.non_field_errors|add:form.this_is_the_login_form.errors %}
+			{{ error }}
+		{% endfor %}
+	{% endif %}
+		<form id="formulario" method="post" action="?step=2">
+		{% csrf_token %}
+		{{ form.id_event.label_tag }}: {{ form.id_event }}
+		{% if form.id_event.errors %}
+		{{ form.id_event.errors }}
+		{% endif %}
+		<br/>
+		{{ form.pay_choice.label_tag }}: {{ form.pay_choice }}
+		{% if form.pay_choice.errors %}
+		{{ form.pay_choice.errors }}
+		{% endif %}
+				<br/>
+				<br/>
+				<p class="submit">
+					<input value="Avan&ccedil;ar -->" tabindex="100" type="submit">
+				</p>
+		</form>
+		<br/>OBS.: Se você já estiver inscrito no encontro, será mostrado o status do seu pagamento.
+{% endif %}
+{% endblock %}

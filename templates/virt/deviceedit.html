@@ -1,0 +1,89 @@
+{% extends "virt/base.html" %}
+
+
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#domainop').addClass("current_page_item");
+    
+    
+    $('#id_on_poweroff').attr('value', 'destroy');
+    $('#id_on_reboot').attr('value', 'restart');
+    $('#id_on_crash').attr('value', 'restart');
+    
+    
+  });
+</script>
+
+<style type="text/css" media="screen">
+        #id_name {  width: 300px; }
+        #id_description { width: 300px; }
+        #id_memory, #id_currentMemory, #id_vcpus { width: 90px; }
+        #id_os_kernel, #id_os_initrd, #id_os_cmdline { width: 300px;}
+        #id_source { width: 300px; }
+        #id_target { width: 100px;}
+        #id_args { width: 400px; height: 100px;}
+</style>
+{% load i18n extras %}
+
+<div class="post">
+
+
+	<div class="post_title"><h2 class="{{device.type}}icon"><a href="#">Edit {{ device.type|capfirst }}</a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+	<div class="post_body">
+    
+        <div class="post_meta" style="font-size: 12px;">
+    	    <h3> Domain Info </h3>
+    	     {% trans "Domain Name" %}:  <a href="{% url domain_edit device.domain.id %}"> {{ device.domain.name }} </a> <br/>
+    	     {% trans "Device connected" %}: 
+      	           
+             {% if device.isconnected %} 
+    	          <span style="font-weight: bold; font-size: 15px;"> {% trans "Yes" %} </span> 
+    	         
+             {% else %} 
+                 <span style="font-weight: bold; font-size: 15px;">    {% trans "No" %} </span>    
+                   
+            {% endif %} 
+            
+            <input style="font-size: 11px; float:right;"   type="submit" value="{% trans "Disconnect" %}" onclick="if (confirm('Confirm Detach ?')) { window.location='{% url device_detach device.id %}'}"/> 
+           <input  style="font-size: 11px; float:right;"  type="submit" value="{% trans "Connect" %}" onclick="if (confirm('Confirm Attach ?')) { window.location='{% url device_attach device.id %}'}"/>
+   	    
+
+    	</div>
+    	<div class="clear"> &nbsp; </div>
+        <form class="formx" action="{% url device_save %}" method="post">
+            <input type="hidden" name="id" value="{{ device.id }}" id="id"/>
+            <input type="hidden" name="type" value="{{ device.type }}" id="type"/>
+            {% for field in form %}
+            <p>    
+                {{ field.label_tag }} {{ field }} 
+                 {% if field.errors %}
+                    <span class="fielderror"> {% for error in field.errors %} {{ error }} &nbsp; {% endfor %} </span>
+                    {% endif %}
+                    {% if field.help_text %}
+                        <br/><span class="help"> {{ field.help_text }} </span>
+                    {% endif %}
+            </p>    
+            {% endfor %}
+        
+             <p>
+                  <input class="form_bt_adicionar" type="submit" value="{% trans "Save" %}" />
+               </p>
+          
+        </form>
+        	<div class="clearer">&nbsp;</div>
+	</div>
+	
+
+
+</div>
+
+
+
+{% endblock %}
+
+
+

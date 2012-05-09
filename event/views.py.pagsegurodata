@@ -1,0 +1,51 @@
+# coding=utf-8
+
+from django.http import Http404, HttpResponseRedirect
+from django.template import RequestContext
+from django.shortcuts import render_to_response, get_object_or_404
+from person.models import personProfile
+from django.contrib.auth.decorators import login_required
+from models import event, event_price
+from forms import eventChoiceForm
+from django.conf import settings
+from pypagseguro import *
+
+
+@login_required
+def subscribe(request):
+	if request.method == 'POST':
+		form = eventChoiceForm(request.POST)
+		if form.is_valid():
+			step = request.GET['step']
+			if (step.isdigit()) and (int(step) == 2):
+				user_profile = request.user.userprofile
+				eventdata = event.objects.get(pk = form.data['id_event'])
+				eventprice = event_price.objects.get(id_event = form.data['id_event'], id_district = form.data['id_event'])
+
+				carrinho = Pagseguro(email_cobranca=settings.PAGSEGURO_EMAIL,tipo='CP')
+				carrinho.cliente(nome=request.user.first_name+' '+request.user.last_name, cidade=user_profile.person_city, estado=user_profile.person_state, telefone=user_profile.person_phone, email=request.user.email )
+				carrinho.item(id=eventdata.id_event, descr=u'Inscricao - '+str(eventdata), quant=1, valor=int(eventprice.price))
+				pagsegurodata = carrinho.mostra(imprime=False, imgBotao=3)
+
+				response = render_to_response("subscribe.html", {'PAGE_NAME': 'Inscerver', 'eventdata': eventdata, 'eventprice': eventprice, 'pagsegurodata': pagsegurodata }, context_instance=RequestContext(request))
+			else:
+				response = render_to_response("subscribe.html", {'form': form, 'PAGE_NAME': 'Inscerver'}, context_instance=RequestContext(request))
+
+
+		else:
+			response = render_to_response("subscribe.html", {'form': form, 'PAGE_NAME': 'Inscerver'}, context_instance=RequestContext(request))
+
+
+	else:
+		form = eventChoiceForm()
+		response = render_to_response("subscribe.html", {'form': form, 'PAGE_NAME': 'Inscerver'}, context_instance=RequestContext(request))
+
+	return response
+
+
+@login_required
+def list(request):
+	person_list = personProfile.objects.all()
+	response = render_to_response("event.html", {'person_list': person_list, 'PAGE_NAME': 'Inscerver'}, context_instance=RequestContext(request))
+	return response
+

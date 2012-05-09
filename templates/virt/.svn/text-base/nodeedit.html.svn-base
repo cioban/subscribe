@@ -1,0 +1,158 @@
+{% extends "virt/base.html" %}
+{% load i18n %}
+<link rel="stylesheet" href="/static/css/box.css" type="text/css" media="screen" charset="utf-8">
+
+
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#nodeop').addClass("current_page_item");
+    
+    $('#showhelp').click(function() {       
+       $('#driverhelp').slideDown('normal');        
+    });
+    $('#closehelp').click(function() {       
+       $('#driverhelp').hide();
+    });
+    
+});
+</script>
+
+<style type="text/css" media="screen">
+    #id_description { width: 300px; }
+    #id_hostname { width: 200px; }
+      #id_uri { width: 400px; }
+      #id_type { width: 200px;}
+</style>
+
+{% load extras %}
+
+<div class="post">
+
+	<div class="post_title"><h2><a href="#">Node {{ node.name }}</a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+	<div class="post_body">
+  
+        <input class="form_bt_adicionar" style="float: right;" type="submit" value="{% trans "update libvirt capabilities" %}" onclick="window.location='{% url node_updatecapabilities node.id %}'"/>
+        
+  <input class="form_bt_ativar" style="float: right;" type="submit" value="Update Domains" onclick="window.location='{% url node_updatedomains node.id %}'"/>
+  
+    <form class="formx" action="{% url node_save %}" method="post">
+        
+        <input type="hidden" name="id" value="{{node.id}}" id="id"/>
+       
+       
+        {% for field in form %}
+        <p>
+            {{ field.label_tag }} {{ field }} &nbsp;
+              {% if field.name == 'uri' %} <a href="#" id="showhelp"> {% trans "Help" %} </a>
+                  <div class="post_meta" style="font-size: 12px; display:none;" id="driverhelp">
+                       <a href="#" id="closehelp" style="float:right;"> {% trans "Close" %} </a>
+                      <h3> URI Help </h3>
+              	    <pre>{{ URIHELP }}</pre>
+              	</div>
+                {% endif %}
+                 
+                 {% if field.errors %}
+                    <span class="fielderror"> {% for error in field.errors %} {{ error }} &nbsp; {% endfor %} </span>
+                    {% endif %}
+                    {% if field.help_text %}
+                        <br/><span class="help"> {{ field.help_text }} </span>
+                    {% endif %}
+                    
+        </p>    
+        {% endfor %}
+
+       
+       
+            <p>
+              <input class="form_bt_alterar" type="submit" value="Save" />
+           </p>
+    </form>
+    
+
+        
+  <br/>
+  <br/> 
+      
+     <h2> {{ domains_count }} Domains </h2>
+      <div class="clearer">&nbsp;</div>
+  	
+  	<table class="tablex" border="0" cellpadding="0" cellspacing="0">
+             <tr>
+                         <th> Name </th>
+                         <th> Memory </th>
+                         <th> Vcpus </th>
+                         <th> OS Type </th>
+                         <th> Domain-0 </th>
+                         <th> State </th>
+                         <th>  </th>
+              </tr>
+              
+              
+                    {% for dom in domains %}
+                        {% if dom.libvirtdomain.0 %}
+                        <tr>
+                            <td> {{ dom.domain.name }}</td>
+                            <td> {{ dom.libvirtdomain.0.info.1|memorysizeformat:"k" }} MB   </td>
+                            <td> {{ dom.libvirtdomain.0.maxVcpus }} </td>
+                            <td> {{ dom.libvirtdomain.0.OSType|capfirst }} </td>
+                            <td> {{ dom.domain.node }}</td>
+                            <td> {{ dom.libvirtdomain.0.info.0|libvirtstate }} </td>
+                            <td> <a class="edit" href="{% url domain_edit dom.domain.id %}">&nbsp;</a> <a class="remove" href="{% url domain_delete dom.domain.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a>&nbsp;</td>
+                        </tr>
+                         {% else %}
+                         <tr>
+                             <td> {{ dom.domain.name }}</td>
+
+                             <td> - </td>
+                             <td> - </td>
+                             <td> - </td>
+                             <td> {{ dom.domain.node }}</td>
+                             <td> {% if dom.libvirtdomain.1 %} 
+                                    Domain-0 unavailable
+                                  {% else %}
+                                 Powered Off 
+                                 {% endif %}</td>
+                            <td> <a class="edit" href="{% url domain_edit dom.domain.id %}">&nbsp;</a> <a class="remove" href="{% url domain_delete dom.domain.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a>&nbsp;</td>
+
+                         </tr>
+                         {% endif %}
+                        {% endfor %}
+  
+                    </table>
+      
+      <br/>
+      <br/>
+     
+	</div>
+	<h3 class="interfaceicon"> Network Interfaces </h3>
+	<div class="post_meta" style="font-size: 12px;">
+	
+	      {% for dev in node.getnetdev %}
+	        {{ dev }} <br/>
+	      {% endfor %}
+	</div>
+	<br/><br/>
+    
+     <h3 class="xmlicon"> XML </h3>
+	<div class="post_meta" style="font-size: 12px;">
+	    
+	      <pre>{{ node.capabilities }} </pre>
+	</div>
+
+
+
+    <br/>
+    <br/>
+    <a class="remove" href="{% url node_delete node.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a>
+    	
+</div>
+
+
+
+{% endblock %}
+
+

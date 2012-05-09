@@ -1,0 +1,26 @@
+{% extends "virt/base.html" %}
+{% load i18n %}
+
+{% block menu2 %}
+		<ul>
+			<li><a href="{% url domain_add %}">{% trans "Create Domain" %} </a></li>
+			<li><a href="{% url node_add %}"> {% trans "Create Node" %} </a></li>
+			<li><a href="#">{% trans "Status" %} </a></li>
+		</ul>
+
+{% endblock %}
+  
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#homeop').addClass("current_page_item");
+  });
+</script>
+
+<style type="text/css" media="screen">
+    #content { height: 200px;}
+</style>
+
+<br/>
+{% endblock %}

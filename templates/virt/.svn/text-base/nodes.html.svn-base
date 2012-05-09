@@ -1,0 +1,112 @@
+{% extends "virt/base.html" %}
+{% load i18n %}
+
+{% block menu2 %}
+		<ul>
+			<li><a href="{% url node_add %}">{% trans "Create Node" %} </a></li>
+		</ul>
+
+{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#nodeop').addClass("current_page_item");
+  });
+</script>
+
+{% load extras %}
+
+<div class="post">
+
+	<div class="post_title"><h2><a href="#"> {% trans "Nodes" %} </a></h2></div>
+	<div class="post_date"> <a href="#"></a></div>
+	
+	
+	
+	
+	
+	<div class="post_body">
+	
+        <div class="pagination" style="float: right;">
+            <span class="step-links">
+                {% if nodes.has_previous %}
+                    <a href="?page={{ nodes.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ nodes.number }} of {{ nodes.paginator.num_pages }}.
+                </span>
+
+                {% if nodes.has_next %}
+                    <a href="?page={{ nodes.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+        <div class="clearer">&nbsp;</div>
+        	
+    	<table class="tablex" border="0" cellpadding="0" cellspacing="0">
+               <tr> 
+                    <th> ID </th>
+                    <th> Name </th>
+                    <th> Hostname </th>
+                    <th> Total Memory </th>
+                    <th> Free Memory </th>
+                    <th> Processors </th>
+                    <th> VMs </th>
+                    <th> Arch </th>
+                  
+                    <th> </th>
+                </tr>
+                
+                
+                {% for n in nodes.object_list %}
+                  
+                        {% if n.nodelibvirt.0 %}
+    	               <tr> 
+    	                    <td> <a href="{% url node_edit n.node.id %}">{{ n.node.id }} </a></td>
+                            <td> {{ n.node.name }} </td>
+                            <td> {{ n.node.hostname }} </td>
+                            <td> {{ n.nodelibvirt.0.getInfo.1 }} MB </td>
+                            <td> {{ n.nodelibvirt.0.getFreeMemory|memorysizeformat:"b" }} MB  </td>
+                            <td> {{ n.nodelibvirt.0.getInfo.2 }} </td>
+                            <td> {{ n.nodelibvirt.0.numOfDomains|ndomain }} </td> 
+                            <td> {{ n.nodelibvirt.0.getInfo.0 }} </td>
+                            <td> <a class="edit" href="{% url node_edit n.node.id %}">&nbsp;</a> <a class="remove" href="{% url node_delete n.node.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> &nbsp; </td>
+                          
+                        </tr>
+                        {% else %}
+                        <tr>
+                              <td> <a href="{% url node_edit n.node.id %}"> {{ n.node.id }} </a> </td>
+                              <td> {{ n.node.name }} </td>
+                              <td> {{ n.node.hostname }} </td>
+                              <td> - </td>
+                              <td> - </td>
+                              <td> - </td>
+                              <td> - </td> 
+                              <td> - </td>
+                                <td> <a class="edit" href="{% url node_edit n.node.id %}">&nbsp;</a> 
+                                    <a class="remove" href="{% url node_delete n.node.id %}" onclick="return confirm('Confirm Delete ?');">&nbsp;</a> &nbsp; </td>
+                          </tr>
+
+                        {% endif %}
+                {% endfor %}
+    	</table>
+    
+    
+    
+	
+	</div>
+	
+	<div class="post_meta">
+	
+	</div>
+
+</div>
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('#subscribelistidentifyop').addClass("current_page_item");
+  });
+</script>
+
+		Lista de inscritos para crachá, totalizando {{ count }} registros.<br/>
+		<br/><br/>
+		Lista de registros:<br/>
+		{% for subscribe in subscribes %}
+			- {{ subscribe.id_user.first_name }} {{ subscribe.id_user.last_name }} - {{ subscribe.id_user.userprofile.person_city }}-{{ subscribe.id_user.userprofile.person_state }}<br/>
+		{% endfor %}
+
+{% endblock %}
