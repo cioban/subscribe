@@ -32,4 +32,5 @@ pip-log.txt
 *.sql
 *.old
 lista.txt
+lista.csv
 pagseguro.txt
