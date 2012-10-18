@@ -156,7 +156,7 @@ if __name__ == "__main__":
 				else:
 					log.write('A inscricao de: '+str(user)+' alterou de ['+transaction_status_local+'] para ['+transaction_status_remote+'] - event['+str(transaction.id_event.id_event)+']')
 					transaction.StatusTransacao = transaction_status_remote
-					#user.email_user(subject, message, from_email=None)
+					user.email_user(subject, message, from_email=None)
 					transaction.save()
 
 		except Exception, e:

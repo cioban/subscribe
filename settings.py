@@ -5,7 +5,7 @@ import os
 ROOTDIR = os.path.realpath(os.path.dirname(__file__))
 
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 
@@ -187,11 +187,11 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 SYS_NAME = u'Inscrição Metodista'
-SYS_VERSION = '0.4'
+SYS_VERSION = '0.6'
 SYS_URL = 'http://subscribe.cioban.cc'
 
 
-PAGSEGURO_TOKEN='2B80667665C9452483300B44A8AFA2D2'
+PAGSEGURO_TOKEN='D13FFE7D567649CCA770F24C386500F0'
 PAGSEGURO_EMAIL='financeiro@juventudemetodista.org.br'
 
 

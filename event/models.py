@@ -87,10 +87,10 @@ class event_subscribe(models.Model):
 		return self.id_user.first_name+' '+self.id_user.last_name+': '+self.id_event.event_name+' - '+self.id_event.event_date_begin.strftime("%d/%m/%Y")+' - R$ '+str('%.2f' % (self.event_price,)).replace('.',',')+' - '+self.TipoPagamento+' - '+self.StatusTransacao
 
 
-#class event_subscribe_intent(models.Model):
-#	id_event_subscribe_intent	= models.AutoField(max_length=11, primary_key=True)
-#	id_event					= models.ForeignKey(event)
-#	id_user						= models.ForeignKey(User, db_column='id_user')
-#	TransacaoID					= models.CharField(max_length=255, null=True)
-#	class Meta:
-#		db_table = 'event_subscribe_intent'
+class event_subscribe_intent(models.Model):
+	id_event_subscribe_intent	= models.AutoField(max_length=11, primary_key=True)
+	id_event					= models.ForeignKey(event)
+	id_user						= models.ForeignKey(User, db_column='id_user')
+	event_price					= models.FloatField(verbose_name=u"Preço")
+	class Meta:
+		db_table = 'event_subscribe_intent'

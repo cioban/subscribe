@@ -18,6 +18,7 @@ class UserProfileInline(admin.StackedInline):
 
 class UserProfileAdmin(UserAdmin):
 	inlines = [UserProfileInline]
-	search_fields = ('userprofile__person_cpf', 'userprofile__activation_key')
+	search_fields = ('userprofile__person_cpf', 'userprofile__activation_key',
+    'email', 'first_name', 'last_name')
 
 admin.site.register(User, UserProfileAdmin)

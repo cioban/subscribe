@@ -6,7 +6,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from person.models import UserProfile
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.views.decorators.csrf import csrf_exempt
-from models import event, event_price, event_subscribe
+from models import event, event_price, event_subscribe, event_subscribe_intent
 from forms import eventChoiceForm, pagStatusForm
 from django.conf import settings
 from pagamentolib import PagSeguro, LOG
@@ -27,11 +27,9 @@ def user_is_in_federation_group(user):
 @login_required
 @user_passes_test(user_is_in_federation_group ,login_url='/')
 def subscribe_list_identify(request):
-
 	options = ['Aprovado', 'Completo']
 	subscribes = event_subscribe.objects.filter(StatusTransacao__in=options).order_by('id_user__first_name')
 	count = event_subscribe.objects.filter(StatusTransacao__in=options).count()
-
 
 	return render_to_response("subscribe_list_identify.html", {'PAGE_NAME': 'Lista de inscritos', 'subscribes': subscribes, 'count': count }, context_instance=RequestContext(request))
 
@@ -96,8 +94,12 @@ def subscribe(request):
 
 
 				else:
+					user = request.user
+					new_event = event.objects.get(pk = request.POST.get('id_event'))
 					eventprice_pag = str(eventprice).replace(',','.')
 					if request.POST['pay_choice'] == 'P':
+						subscribe_intent = event_subscribe_intent(id_event=new_event, id_user=user, event_price=eventprice_pag)
+						subscribe_intent.save()
 						response = render_to_response("subscribe.html", {'PAGE_NAME': 'Inscerver', 'eventdata': eventdata, 'eventprice_pag': eventprice_pag, 'eventprice': eventprice, 'pagseguro_email': settings.PAGSEGURO_EMAIL, 'reference': reference }, context_instance=RequestContext(request))
 					elif request.POST['pay_choice'] == 'F':
 						response = render_to_response("subscribe.html", {'PAGE_NAME': 'Inscerver', 'eventdata': eventdata, 'eventprice_pag': eventprice_pag, 'eventprice': eventprice, 'reference': reference, 'pay_choice': request.POST['pay_choice'] }, context_instance=RequestContext(request))
@@ -159,7 +161,7 @@ def pagreturn(request):
 
 		except Exception, e:
 			log.write('ERRO: '+str(e), level='ERROR')
-			pass
+			retorno = False
 
 		if retorno == True:
 			try:
@@ -177,10 +179,16 @@ def pagreturn(request):
 
 				price = request.POST.get('ProdValor_1').replace(',','.')
 
+
+				yet_saved = None
 				try:
-					#TODO: deixa registrar nova inscrição se a inscrição que existir estiver cancelada
-					yet_saved = event_subscribe.objects.get(id_event = request.POST.get('ProdID_1'), id_user = user.id )
-				except event_subscribe.DoesNotExist:
+					yet_subscribe_check = event_subscribe.objects.filter(id_event = int(request.POST.get('ProdID_1')), id_user = request.user.id )
+					for subscribed in yet_subscribe_check:
+						yet_saved = subscribed
+						if subscribed.StatusTransacao.encode('utf-8') == 'Cancelado':
+							yet_saved = None
+							log.write(" -> Existe uma inscricao CANCELADA cadastrada no BD...")
+				except:
 					yet_saved = None
 
 				if yet_saved is not None:
