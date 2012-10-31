@@ -1,0 +1,283 @@
+TransacaoID, DataTransacao, TipoPagamento, StatusTransacao, VALOR, NOME, EMAIL, DATA_NASCIMENTO, CIDADE, ESTADO, DISTRITO
+294915835, 28/08/2012 16:46:22, Federação depósito, Completo, 150.0, ANA FLAVIA  CARRILHO ALVES, ana_flavia_alves@hotmail.com, 23/10/1989, Londrina, PR, DISTRITO NORTE-NOVO
+891432695, 30/08/2012 16:13:26, Federação depósito, Aprovado, 150.0, Lucimara Silva Lopes, lopes_lucimara@hotmail.com, 20/02/1986, Cornélio Procópio, PR, DISTRITO NORTE-PIONEIRO II
+304B7E9292F141DE9A7AF52667B300D5, 31/08/2012 14:47:34, Boleto, Cancelado, 150.0, jaqueline nunes da costa, jaquelinencosta@hotmail.com, 01/08/1980, cornélio procópio, PR, DISTRITO NORTE-PIONEIRO II
+675748863, 03/09/2012 18:42:35, Federação depósito, Em Análise, 165.0, luane  Hendrix, lua_hendrix@hotmail.com, 19/03/1994, Morretes, PR, DISTRITO SUL PARANAENSE
+136873966, 04/09/2012 14:28:09, Federação depósito, Completo, 165.0, Raquel  Troiano, raquelo@simpress.com.br, 15/12/1985, São Jose dos Pinhais , PR, DISTRITO SUL PARANAENSE
+369864440, 11/09/2012 13:32:30, Federação depósito, Em Análise, 165.0, Bruna Ruths Pinheiro, bruna.ufpr2011@gmail.com, 07/12/1992, Paranaguá, PR, DISTRITO SUL PARANAENSE
+73B761C243AD48779952060306392C1B, 18/09/2012 12:00:42, Cartão de Crédito, Cancelado, 150.0, Lindsay Moya, lindsaymoya@hotmail.com, 24/09/1989, Londrina, PR, DISTRITO NORTE-NOVO
+957114535, 21/09/2012 18:08:52, Federação depósito, Em Análise, 150.0, camila Oliveira, caahdosul_@hotmail.com, 27/07/1994, Cambara, PR, DISTRITO NORTE-PIONEIRO II
+23E94D3F289549BDB05373348CED60CB, 21/09/2012 18:13:55, Cartão de Crédito, Completo, 150.0, Weldrey Toneto de Oliveira, drey_oliver@hotmail.com, 28/12/1993, Cambará, PR, DISTRITO NORTE-PIONEIRO II
+E912CC5DD318441984BCD639A37CD7CC, 21/09/2012 18:13:40, Cartão de Crédito, Completo, 150.0, Weslley Toneto de Oliveira, weslley_oli@hotmail.com, 28/12/1993, Cambará, PR, DISTRITO NORTE-PIONEIRO II
+949435980, 22/09/2012 23:30:24, Federação depósito, Em Análise, 150.0, mateus  henrique polo, mateuspolo@hotmail.com, 23/04/1993, londrina , PR, DISTRITO NORTE-NOVO
+4F15FF5DBFAA4832A422636FE7FF33EC, 23/09/2012 20:45:25, Cartão de Crédito, Completo, 150.0, Thanie  Smaniotto, thaniesmaniotto@yahoo.com.br, 05/10/1992, Londrina, PR, DISTRITO NORTE-NOVO
+186439671, 24/09/2012 12:51:40, Federação depósito, Completo, 150.0, Nathália Pascoal Pavoni, natypavoni1@hotmail.com, 09/06/1990, Santo Antonio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+0E04CE5A065A4FDB954C2D13E24C91EF, 24/09/2012 19:09:44, Cartão de Crédito, Completo, 150.0, allan correia, allan_correia50@hotmail.com, 15/11/1987, Londrina, PR, DISTRITO NORTE-NOVO
+AA08E1890D83469790163786E148CA59, 27/09/2012 19:01:39, Cartão de Crédito, Completo, 150.0, Jhonatan Cruz, jhonatanjwc@gmail.com, 16/03/1991, Londrina, PR, DISTRITO NORTE-NOVO
+911223599, 28/09/2012 23:31:29, Federação depósito, Completo, 135.0, AnaLuiza  Casadei Vieira , analuizacasadei@hotmail.com, 02/04/1994, Maringá, PR, DISTRITO NOROESTE
+438489207, 30/09/2012 16:45:22, Federação depósito, Completo, 150.0, Andressa dos Santos, andressa_santos90@hotmail.com, 27/11/1990, Arapongas, PR, DISTRITO CENTRO-NORTE
+D9187522CC014A93839A6D1BB95090DB, 01/10/2012 11:59:19, Cartão de Crédito, Completo, 150.0, Lindsay Moya, lindsaymoya@hotmail.com, 24/09/1989, Londrina, PR, DISTRITO NORTE-NOVO
+169511735, 01/10/2012 12:50:05, Federação depósito, Completo, 150.0, josiane ribeiro, josikellyribeiro@live.com, 04/11/1981, londrina, PR, DISTRITO NORTE-NOVO
+333371690, 01/10/2012 16:18:21, Federação depósito, Em Análise, 165.0, Daiane  Chagas Rodrigues, daiane.rdgs@hotmail.com, 08/02/1989, Arapongas, PR, DISTRITO METROPOLITANO
+68101513, 02/10/2012 19:27:52, Federação depósito, Em Análise, 135.0, junior muniz, junior.cbwv@hotmail.com, 17/10/1983, Chapecó, SC, DISTRITO SERRANO
+607600847, 03/10/2012 14:33:00, Federação depósito, Em Análise, 150.0, Nayara Oliveira, nah_arapa@hotmail.com, 12/06/1991, Arapongas, PR, DISTRITO CENTRO-NORTE
+4D86368F2A0843D5991D1C30EF80EDBE, 03/10/2012 14:35:35, Cartão de Crédito, Completo, 150.0, Flaviane Marcolin  Medeiros, flaviane.medeiros@hotmail.com, 04/05/1981, Ibiporã, PR, DISTRITO NORTE-NOVO
+483318107, 03/10/2012 17:22:44, Federação depósito, Em Análise, 135.0, Vitor Coutinho, vitor_coutinho@hotmail.com, 23/07/1993, Maringá, PR, DISTRITO NOROESTE
+723287960, 03/10/2012 23:09:57, Federação depósito, Cancelado, 150.0, yukari yamamoto, yukari_yamamoto08@hotmail.com, 08/01/1996, londrina, PR, DISTRITO NORTE-NOVO
+494E1B3103BD433DB454ADE0F135050E, 04/10/2012 10:32:31, Boleto, Completo, 150.0, jaqueline nunes da costa, jaquelinencosta@hotmail.com, 01/08/1980, cornélio procópio, PR, DISTRITO NORTE-PIONEIRO II
+DFE6D56DB8B54DFEB1B6525955E0E90E, 04/10/2012 21:12:38, Cartão de Crédito, Completo, 150.0, Fabiano Aguilar Corrêa, fabiano.c.aguilar@gmail.com, 16/09/1993, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+49261746, 04/10/2012 21:49:16, Federação depósito, Em Análise, 150.0, Thalita Bahls, tha_bahls@hotmail.com, 07/09/1987, Santo Antonio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+D87D114CD9D242E787FB062C36B19D37, 05/10/2012 00:43:14, Cartão de Crédito, Completo, 150.0, Kamila Camargo de sousa, kmla_camargo@hotmail.com, 10/10/1988, Ibiporã, PR, DISTRITO NORTE-NOVO
+223193877, 05/10/2012 10:41:01, Federação depósito, Aprovado, 165.0, Silvia Artigas, silviaheloise@gmail.com, 16/07/1985, Curitiba, PR, DISTRITO METROPOLITANO
+835671933, 08/10/2012 09:56:48, Federação depósito, Completo, 150.0, Fernanda Rahal, ferrahal@gmail.com, 07/11/1989, Londrina, PR, DISTRITO NORTE-NOVO
+981D5825A9ED43779FF28EA52D78319D, 08/10/2012 17:26:45, Cartão de Crédito, Completo, 150.0, Glaucilene  Gonçalves Lopes, lenelopes2@hotmail.com, 19/07/1974, Londrina, PR, DISTRITO NORTE-NOVO
+771067574, 08/10/2012 18:51:39, Federação depósito, Completo, 150.0, Vivian de Souza Bruniera, vivianbruniera@hotmail.com, 07/07/1987, Cornélio Procópio, PR, DISTRITO NORTE-PIONEIRO II
+863746225, 08/10/2012 19:24:21, Federação depósito, Em Análise, 150.0, Ana Flávia Lopes Nogueira, anaflavialn@hotmail.com, 15/03/1991, Londrina, PR, DISTRITO NORTE-NOVO
+F8E0D87E65454529B39A1E0952A5B0DE, 08/10/2012 21:02:21, Cartão de Crédito, Completo, 150.0, Vinicius Nogueira Costa, vinicius_n4@hotmail.com, 25/05/1994, Londrina, PR, DISTRITO NORTE-NOVO
+CFB93A28BE6843819ABB94F9B35255E2, 09/10/2012 13:18:44, Cartão de Crédito, Cancelado, 150.0, Marina  Pradal, marina.pradal@hotmail.com, 26/07/1992, Londrina, PR, DISTRITO NORTE-NOVO
+44F33810019A47DEAC3FA179A268C1D2, 09/10/2012 13:22:09, Boleto, Completo, 150.0, Marina  Pradal, marina.pradal@hotmail.com, 26/07/1992, Londrina, PR, DISTRITO NORTE-NOVO
+261686769, 09/10/2012 14:19:52, Federação depósito, Aprovado, 135.0, Natalyê Steffen, natalye_fs@hotmail.com, 06/09/1993, Chapecó, SC, DISTRITO SERRANO
+7801C8BAC4C04F3491719FB7D883AF53, 09/10/2012 15:08:32, Cartão de Crédito, Completo, 135.0, rosangela bauke, rosangela_bauke@hotmail.com, 15/03/1970, chapecó, SC, Outras regiões
+7D42E99BBC784DF5BF10A4A6AF8C6E9D, 09/10/2012 16:06:36, Boleto, Completo, 135.0, Dandara Cristina Loubak Lima, dandy-lima@hotmail.com, 14/01/1994, Chapecó, SC, DISTRITO SERRANO
+D7E649E5E79948EAAB1A02245149E5AB, 09/10/2012 16:19:30, Boleto, Completo, 135.0, Thanata Ellen Loubak Lima, natalye.steffen@unoesc.edu.br, 14/08/1995, Chapecó, SC, DISTRITO SERRANO
+621147310, 09/10/2012 23:35:14, Federação depósito, Em Análise, 150.0, Jéssica  Ormeneze, jessik_rdo@hotmail.com, 31/08/1993, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+78B689C3356B4C6F9BC67E925A5039E0, 10/10/2012 12:52:28, Cartão de Crédito, Completo, 150.0, Paula Camilla  Ulinski, pulinski@milenia.com.br, 30/06/1988, Londrina, PR, DISTRITO NORTE-NOVO
+1AA6CDC6A6AB417694D0E571169B2DD7, 10/10/2012 13:41:53, Cartão de Crédito, Completo, 150.0, Matheus Cury Sahão, msahao@hotmail.com, 19/02/1987, Londrin, PR, DISTRITO NORTE-NOVO
+88A4879A76C54D74A2096ABBA39239A2, 11/10/2012 12:17:23, Cartão de Crédito, Completo, 135.0, LEANDRO MUNIZ, mleandro.com.br@live.com, 24/10/1979, CHAPECO, SC, Outras regiões
+B2596A76D72F4E4D8048DF8D3C474B1C, 11/10/2012 13:23:58, Cartão de Crédito, Completo, 135.0, Andersson  S. Silva, ander90cco@gmail.com, 04/05/1990, Chapecó, SC, DISTRITO SERRANO
+888201901, 11/10/2012 14:50:21, Federação depósito, Em Análise, 150.0, Suellen de Almeida Freitas, suzinha286@hotmail.com, 06/12/1993, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+490058151, 11/10/2012 18:28:06, Federação depósito, Completo, 150.0, Robson Silva, robsonegrao@yahoo.com.br, 17/09/1980, São Pedro do Ivaí, PR, DISTRITO CENTRO-NORTE
+917345765, 11/10/2012 21:10:11, Federação depósito, Em Análise, 135.0, Bruna Hammerschmitt Gelain, bruna__hg@hotmail.com, 21/06/1996, Chapecó, SC, DISTRITO SERRANO
+22D00497460E4325A21E5B2F5DC27424, 12/10/2012 10:53:33, Cartão de Crédito, Completo, 150.0, Benedito Neto, neto_vitorino@hotmail.com, 03/03/1988, Londrina, PR, DISTRITO NORTE-NOVO
+4EFE6F99A8A043ADA5EBB9637BFA6298, 12/10/2012 11:22:46, Cartão de Crédito, Completo, 150.0, Tatiane Vitorino, tatynha_amaral@sercomtel.com.br, 23/02/1986, Londrina, PR, DISTRITO NORTE-NOVO
+7A4D87DDE66B4556928CDE344D6B78E4, 12/10/2012 18:38:07, Cartão de Crédito, Completo, 150.0, Diego  Estevam, diegodavy10@gmail.com, 28/12/1992, londrina, PR, DISTRITO NORTE-NOVO
+35CA4475B3C948968613551AF7F9E96D, 12/10/2012 20:34:54, Cartão de Crédito, Completo, 150.0, Fernanda Medeiros Cia, fmcia@hotmail.com, 27/12/1984, Cambará, PR, DISTRITO NORTE-PIONEIRO II
+111B3487A90E4DD6BEE2A8A9D2E866A0, 12/10/2012 22:23:38, Cartão de Crédito, Completo, 135.0, caroline collins, carol-jesus-@hotmail.com, 16/05/1987, chapecó, SC, Outras regiões
+0618D123F83A4BE6A891BBD1EF34B284, 13/10/2012 11:58:02, Cartão de Crédito, Completo, 150.0, Juliana  de A. B. Gualiume, joli2504@hotmail.com, 25/04/1985, Santo Ant. da Platina, PR, DISTRITO NORTE-PIONEIRO I
+F7517694CC4446639BF16E08BCE1E2FC, 13/10/2012 12:04:12, Cartão de Crédito, Completo, 150.0, Rogério  Gualiume, rogeriogualiume@hotmail.com, 10/06/1981, Santo Ant. da Platina, PR, DISTRITO NORTE-PIONEIRO I
+70438226, 13/10/2012 12:15:18, Federação depósito, Em Análise, 150.0, Heloise Barbati, heloise_barbati@hotmail.com, 10/09/1997, São Pedro do Ivaí, PR, DISTRITO CENTRO-NORTE
+700896096, 13/10/2012 13:03:49, Federação depósito, Completo, 150.0, Maria Fernanda  Monteiro, marinandamonteiro@hotmail.com, 03/12/1991, Londrina, PR, DISTRITO NORTE-NOVO
+BC5D462C656D4F0799BDFB0DCB2B155D, 13/10/2012 14:42:45, Boleto, Completo, 135.0, diego  plassa, diegoplassa@hotmail.com, 01/09/1988, londrina, PR, Outras regiões
+CC38408DFC6A48C09F692382C5D97446, 13/10/2012 15:00:09, Boleto, Completo, 150.0, Ana Claudia  Rodrigues de Oliveira, anaclaudia-oliveir@hotmail.com, 15/02/1992, Cambé, PR, DISTRITO NORTE-NOVO
+257956206, 13/10/2012 22:09:22, Federação depósito, Em Análise, 165.0, Ariana Taques, aktaques21@gmail.com, 28/09/1980, Curitiba, PR, DISTRITO METROPOLITANO
+17A0F9EFDFAB4AF3AC03556748A5F3F1, 14/10/2012 00:16:37, Cartão de Crédito, Completo, 150.0, Marcio  Maciel, marcioandre_21@hotmail.com, 15/12/1982, Londrina, PR, DISTRITO NORTE-NOVO
+202404067, 14/10/2012 14:31:37, Federação depósito, Em Análise, 165.0, Daniela Pereira, dviteze@hotmail.com, 21/10/1978, Curitiba, PR, DISTRITO METROPOLITANO
+428385468, 14/10/2012 15:06:12, Federação depósito, Completo, 135.0, Leonardo Martins, tioleo_style@hotmail.com, 16/03/1989, Paranavaí, PR, DISTRITO NOROESTE
+345497442, 14/10/2012 15:16:18, Federação depósito, Completo, 135.0, Juliana Barbosa, julianna.morena@hotmail.com, 15/08/1989, Paranavaí, PR, DISTRITO NOROESTE
+DB1A5F9663CF46978F7C96A20F5B1D9F, 14/10/2012 17:06:26, Cartão de Crédito, Completo, 150.0, Lilian Marques, marqueslilian@hotmail.com, 20/08/1979, Londrina, PR, DISTRITO NORTE-NOVO
+1604A9551CF44E1EADAF4B62B30FE8A2, 14/10/2012 18:12:43, Cartão de Crédito, Completo, 150.0, Douglas    Santos Silva, douglas_missao@hotmail.com, 07/09/1989, londrina, PR, DISTRITO NORTE-NOVO
+176801303, 14/10/2012 19:53:32, Federação depósito, Em Análise, 150.0, Flavia Todeschini, flaviaatodeschini@hotmail.com, 18/11/1986, londrina, PR, DISTRITO NORTE-NOVO
+662F2F2EBC804DA3ACF33D624DDF73B5, 14/10/2012 21:59:41, Cartão de Crédito, Completo, 150.0, Flávia Gabriela Meserlian, flaah_meserlian@hotmail.com, 10/10/1994, Arapongas, PR, DISTRITO CENTRO-NORTE
+CFE5846BB8574F8786BF2C3B175B9A24, 14/10/2012 22:58:22, Cartão de Crédito, Completo, 135.0, FLÁVIA  CRISTINA DE SOUZA, flavinha_cris89@hotmail.com, 10/11/1989, PARANAVAÍ, PR, DISTRITO NOROESTE
+CEC0C2BFA6034FA0BFAB4FBBA818FE7F, 14/10/2012 23:05:24, Cartão de Crédito, Completo, 135.0, Pedro  Paulo da Silva Junior, pedrometox@hotmail.com, 02/06/1984, Paranavaí, PR, DISTRITO NOROESTE
+F1F597A774994200B0FD173EF90CACDE, 14/10/2012 23:26:47, Boleto, Cancelado, 165.0, Fernando Oliveira, f.oliveirabr@gmail.com, 23/07/1990, Araucária, PR, DISTRITO SUL PARANAENSE
+D3E330501EDF4847AB44DDFB2D5E1779, 14/10/2012 23:26:02, Cartão de Crédito, Completo, 150.0, Hugo Freitas, hugovendaslivelon@hotmail.com, 08/01/1983, londrina, PR, DISTRITO NORTE-NOVO
+A56F75FC340C424C80AAC39E30064A53, 14/10/2012 23:36:00, Boleto, Cancelado, 165.0, Carla  Arieta, carlaarieta@hotmail.com, 13/03/1987, Araucária, PR, DISTRITO SUL PARANAENSE
+633976517, 14/10/2012 23:52:39, Federação depósito, Em Análise, 165.0, Carina Moraes, carIMORaees@hotmail.com, 19/02/1993, Paranagua, PR, DISTRITO SUL PARANAENSE
+287787749, 15/10/2012 00:09:18, Federação depósito, Completo, 135.0, Ericka Tissot, ericka.tissot@hotmail.com, 14/10/1994, Paranavaí, PR, DISTRITO NOROESTE
+E4845B257C6740B1A07C433F63DEFBA7, 15/10/2012 08:03:44, Cartão de Crédito, Cancelado, 135.0, Ana Carolina Lopes Silva, a.carolinalo@hotmail.com, 19/07/1993, Cascavel, AC, DISTRITO SUDOESTE
+943080706, 15/10/2012 08:49:56, Federação depósito, Em Análise, 150.0, Everton  Granemann, evertongranemann@gmail.com, 22/11/1986, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+608294019, 15/10/2012 09:28:13, Federação depósito, Em Análise, 135.0, Vinicius Silvestre, vinapg@hotmail.com, 01/07/1984, Foz do Iguaçu, PR, DISTRITO SUDOESTE
+95FF4C52AC6744D8B2F2B46F15225126, 15/10/2012 10:12:21, Boleto, Cancelado, 165.0, Gustavo Pereira, gustavolopespereira@yahoo.com.br, 03/05/1989, São Bernardo do Campo, SP, DISTRITO LITORÂNEO
+447517858, 15/10/2012 11:56:35, Federação depósito, Completo, 150.0, Fabiana  Claro de Oliveira Dias, fabianaclarodias@gmail.com, 18/01/1979, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+DBD2D535624444878F31F9AFC45D132E, 15/10/2012 10:29:51, Cartão de Crédito, Completo, 150.0, maikon tiago rosa  rosa , tiagomt@hotmail.com, 06/05/1983, cornelio procopio , PR, DISTRITO NORTE-PIONEIRO II
+94D1610F93494282B09B04F1786296F0, 15/10/2012 10:43:18, Cartão de Crédito, Completo, 150.0, Gustavo Pedroso scarpin, pedrosogustavo69@gmail.com, 25/11/1993, Ibiporã, PR, DISTRITO NORTE-NOVO
+817722672, 15/10/2012 12:25:47, Federação depósito, Completo, 150.0, Ana Flávia Castro, jolie0425@hotmail.com, 08/06/1993, Santo Ant. da Platina, PR, DISTRITO NORTE-PIONEIRO I
+3744151540BB4D5DB09578FC2320B19A, 15/10/2012 12:41:09, Cartão de Crédito, Completo, 135.0, jhonatan  candido de souza, jhonatan_candido@hotmail.com, 23/07/1989, são bernardo do campo, SP, Outras regiões
+273A36E08FA44D0ABD18DF09FF433C0B, 15/10/2012 12:48:25, Cartão de Crédito, Completo, 150.0, Fernanda Manoel, fernanda_senai@hotmail.com, 24/10/1988, Londrina, PR, DISTRITO NORTE-NOVO
+EEA75B40FA1F4EC09689114B5DE70E15, 15/10/2012 13:41:35, Cartão de Crédito, Completo, 150.0, Jéssica  Rodrigues de Freitas, jessicarfreitas@gmail.com, 29/07/1983, Jandaia do Sul, PR, DISTRITO CENTRO-NORTE
+E82500A72F8A47ED8BEA876E52A78EC3, 15/10/2012 14:12:42, Boleto, Cancelado, 135.0, Ana Carolina Lopes Silva, a.carolinalo@hotmail.com, 19/07/1993, Cascavel, AC, DISTRITO SUDOESTE
+388838601, 15/10/2012 14:18:22, Federação depósito, Em Análise, 150.0, William Passos, vilinho@gmail.com, 23/05/1987, cornelio procopio, PR, DISTRITO NORTE-PIONEIRO II
+E0B5E37CF791491385AE2FFE1FB297F5, 15/10/2012 14:46:40, Cartão de Crédito, Completo, 150.0, Paulo Ricardo Andrade, paulinho_andradecp@hotmail.com, 18/03/1989, Cornélio Procópio, PR, DISTRITO NORTE-PIONEIRO II
+54669CC6AB4140DB937EEB8AFAC13052, 15/10/2012 14:53:25, Cartão de Crédito, Completo, 150.0, David Willian Lopes, davidwillianl@hotmail.com, 21/04/1989, Londrina, PR, DISTRITO NORTE-NOVO
+496975151, 15/10/2012 15:12:08, Federação depósito, Completo, 150.0, THATIANA PRADO FLAVIO, thaty_xuxu@hotmail.com, 17/08/1984, LONDRINA, PR, DISTRITO NORTE-NOVO
+190672140, 15/10/2012 16:34:53, Federação depósito, Completo, 135.0, Mathaeus Toledo, caju_mathaeus@hotmail.com, 13/07/1996, Paranavaí, PR, DISTRITO NOROESTE
+826335B93D854BEF8EDFA9D507C15247, 15/10/2012 17:16:33, Cartão de Crédito, Completo, 135.0, Gieza Santana, gyezafs@hotmail.com, 04/08/1987, CHapecó, SC, DISTRITO SERRANO
+753037629, 15/10/2012 17:32:03, Federação depósito, Em Análise, 135.0, Jaqueline schinaider, j_amoreterno@hotmail.com, 03/03/1988, Chapeco, SC, DISTRITO SERRANO
+569EE9CC1D2640FBAE7BDAC6E5C46FF8, 15/10/2012 17:50:58, Cartão de Crédito, Completo, 135.0, Mariana Leticia , mariana_leticia_silva@hotmail.com, 22/09/1995, Paranavai, PR, DISTRITO NOROESTE
+84207E5172B744F79BCAD6ED29AAC516, 15/10/2012 18:43:07, Cartão de Crédito, Completo, 150.0, FLAVIO LUIS HAYASHI, flavio_lh@yahoo.com.br, 18/04/1991, LONDRINA, PR, DISTRITO NORTE-NOVO
+677905217, 15/10/2012 20:16:00, Federação depósito, Completo, 135.0, Karla Maria Gomes, karlinha_83@msn.com, 18/10/1983, Cascavel, PR, DISTRITO SUDOESTE
+FC08A3AEB47A46CD95E697B431303F7E, 15/10/2012 20:49:23, Cartão de Crédito, Completo, 165.0, Jhenifer Morais, jhenictba7@hotmail.com, 12/04/1990, curitiba, PR, DISTRITO METROPOLITANO
+9D517DBBE13B437BBF2CB780FB4F3E67, 15/10/2012 21:08:48, Cartão de Crédito, Completo, 165.0, Martha Bachtold, martha_bach@hotmail.com, 06/11/1989, Curitiba, PR, DISTRITO METROPOLITANO
+542B25FB2C434DEB95CE9A619FC05477, 15/10/2012 21:01:46, Cartão de Crédito, Cancelado, 135.0, filipe bombarda, felipefontesbombarda@hotmail.com, 30/10/1990, corbelia, PR, DISTRITO SUDOESTE
+619900059, 15/10/2012 21:15:49, Federação depósito, Em Análise, 165.0, Nadia Machado, nadikacwb77@hotmail.com, 24/01/1977, Curitiba, PR, DISTRITO METROPOLITANO
+BEBE3D109FF340D7B96D1C5FC1F4A08B, 15/10/2012 21:16:02, Boleto, Completo, 135.0, Angélica  Bergamin, angelicabergamin@hotmail.com, 29/05/1990, Chapecó, SC, Outras regiões
+0B8813B16FD24CAFA16FAB97BE5BB157, 15/10/2012 21:32:01, Cartão de Crédito, Completo, 165.0, Suelen  Matias Vieira, sumv.19@hotmail.com, 04/06/1986, São José dos Pinhais, PR, DISTRITO METROPOLITANO
+F6616E1B6F2F418E8287EA947A6CEE14, 15/10/2012 21:57:46, Boleto, Cancelado, 165.0, Bruna Barreto, bba_bruna@hotmail.com, 11/02/1986, Araucária, PR, DISTRITO SUL PARANAENSE
+ABBEDDA9CCBB45C19D10BF1FD4643DBE, 15/10/2012 21:59:33, Cartão de Crédito, Completo, 150.0, Raquel Esteves, raquel.r.esteves@hotmail.com, 29/09/1989, Londrina, PR, DISTRITO NORTE-NOVO
+9D552095824F4D43B474D93EE65ADDC9, 15/10/2012 22:11:38, Boleto, Completo, 135.0, Gizele Santana, gizele-s@hotmail.com, 19/03/1991, Chapeco, SC, DISTRITO SERRANO
+A4D75325347F44DBAE08AA166E202819, 15/10/2012 22:10:37, Cartão de Crédito, Completo, 165.0, Ligia Franco de Brito, ligia_fr@hotmail.com, 28/05/1983, Curitiba, PR, DISTRITO METROPOLITANO
+AFE79B087C0F4ACCA6E641ECEBB3B45A, 15/10/2012 22:16:07, Cartão de Crédito, Completo, 135.0, Renan Esteves, esteves.renanr@gmail.com, 25/11/1991, Londrina, PR, DISTRITO NOROESTE
+F8BBE3B700BB4AC7BD8CBF3771F2D39D, 15/10/2012 22:19:28, Boleto, Cancelado, 165.0, henrique almeida, henriquerdealmeida@hotmail.com, 05/02/1987, araucaria, PR, DISTRITO SUL PARANAENSE
+FBCC469817AC4D0EA0B0E02EB1E40481, 15/10/2012 22:21:08, Cartão de Crédito, Completo, 165.0, leticia nascimento, leticia-educacaofisica@hotmail.com, 15/05/1989, curitiba, PR, DISTRITO SUL PARANAENSE
+2D62CA790C404A0D824C70F7EA33B1F3, 15/10/2012 22:29:06, Cartão de Crédito, Completo, 135.0, alexandre rosa, ale_xapeco@hotmail.com, 13/07/1983, chapeco, SC, Outras regiões
+6452B961AF5145D2AF9D6F5AF83FA6D5, 15/10/2012 23:36:33, Cartão de Crédito, Completo, 165.0, Ana Paula  Batista, ana_educacao.fisica@hotmail.com, 10/01/1988, Curitiba, AC, DISTRITO METROPOLITANO
+745306667, 16/10/2012 00:00:05, Federação depósito, Em Análise, 165.0, wendy sakiyama, wendysakiyama@yahoo.com.br, 21/01/1989, curitiba, PR, DISTRITO METROPOLITANO
+778842838, 16/10/2012 00:59:31, Federação depósito, Cancelado, 135.0, Isabella Liba, isabellaliba@gmail.com, 08/11/1993, Cascavel, PR, DISTRITO SUDOESTE
+58707119, 16/10/2012 01:03:32, Federação depósito, Cancelado, 135.0, Rosane Muller, rohmuller@gmail.com, 27/03/1990, Cascavel, PR, DISTRITO SUDOESTE
+490642808, 16/10/2012 01:24:07, Federação depósito, Em Análise, 135.0, Renato Müller, muller.renato@hotmail.com, 05/01/1988, Cascavel, PR, Outras regiões
+472AB30F799D424A80DB63F7D2F6CD93, 16/10/2012 13:04:00, Cartão de Crédito, Completo, 165.0, Fernanda Helbing da Rosa, fernanda.helbingdarosa@gmail.com, 27/12/1989, Joinville, SC, DISTRITO LITORÂNEO
+F521045A8871446095D54D36C4A66154, 16/10/2012 13:05:02, Cartão de Crédito, Cancelado, 150.0, Felipe Lourenço Mendes, mendes-felipe@hotmail.com, 14/12/1990, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+F8381B531A094FF8B514F187275D4E8B, 16/10/2012 13:17:26, Cartão de Crédito, Cancelado, 150.0, Felipe Lourenço Mendes, mendes-felipe@hotmail.com, 14/12/1990, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+84934741F5724E95815F31858323CED8, 16/10/2012 13:37:35, Cartão de Crédito, Completo, 135.0, Mauricio Canton, mc.canton@unochapeco.edu.br, 28/01/1991, mc.canton, SC, DISTRITO SERRANO
+40427988, 16/10/2012 15:56:40, Federação depósito, Completo, 135.0, Lidia Ueda, lidiaueda@gmail.com, 15/12/1989, MARINGÁ, PR, DISTRITO NOROESTE
+2F1D2AF54D49477C97F2722F6B30519C, 16/10/2012 18:32:12, Cartão de Crédito, Completo, 135.0, MARISTELA CUNHA, maristelaeduarda7@yahoo.com.br, 13/07/1980, CHAPECO, SC, DISTRITO SERRANO
+6070E0C114C44AEA8BB1FA10CD2930EC, 16/10/2012 21:04:22, Cartão de Crédito, Completo, 150.0, angela amaral, ed.fisicaangela@hotmail.com, 19/01/1986, londrina, PR, DISTRITO NORTE-NOVO
+A721A9883F2E44A8BCEC27DCDEF8E367, 16/10/2012 23:17:23, Cartão de Crédito, Completo, 165.0, Daniela Cauneto, daniela.cauneto@gmail.com, 10/11/1987, Curitiba, PR, DISTRITO METROPOLITANO
+5BAAE535BCC9494E822C0158953236E8, 17/10/2012 11:51:38, Cartão de Crédito, Cancelado, 150.0, Davi Ferreira Lima, stiflergospel@hotmail.com, 29/05/1991, Ibaiti, PR, DISTRITO NORTE-PIONEIRO I
+FF52151DFE8646ABA9A29FCCA33CB92F, 17/10/2012 13:00:30, Cartão de Crédito, Completo, 135.0, Isabella Liba, isabellaliba@gmail.com, 08/11/1993, Cascavel, PR, DISTRITO SUDOESTE
+699814375, 17/10/2012 16:13:58, Federação depósito, Em Análise, 135.0, Edgard Murilo, edgr.murilo@gmail.com, 06/07/1993, MARINGÁ, PR, DISTRITO NOROESTE
+601195500, 17/10/2012 19:44:25, Federação depósito, Completo, 150.0, Francielle Priscila, francielle.lda@gmail.com, 31/10/1985, Londrina, PR, DISTRITO NORTE-NOVO
+E9B2E19A43604DD38F83F52A6BF9983F, 17/10/2012 19:56:51, Boleto, Aguardando Pagto, 135.0, Rosane Muller, rohmuller@gmail.com, 27/03/1990, Cascavel, PR, DISTRITO SUDOESTE
+399248532, 17/10/2012 23:19:26, Federação depósito, Em Análise, 150.0, Emanuelli Moreira, emanuellimoreira@gmail.com, 20/01/1991, Londrina, PR, DISTRITO NORTE-NOVO
+DDCE768D8A494F70B7B453771233AD29, 17/10/2012 10:00:31, Cartão de Crédito, Completo, 150.0, Felipe Lourenço Mendes, mendes-felipe@hotmail.com, 14/12/1990, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+1111, 17/10/2012 10:00:32, Cartão de Crédito, Cancelado, 150.0, Sergio Cioban Filho, cioban@gmail.com, 17/01/1984, Florianopolis, SC, DISTRITO LITORÂNEO
+2222, 17/10/2012 10:00:33, Cartão de Crédito, Cancelado, 150.0, Sergio Cioban Filho, cioban@gmail.com, 17/01/1984, Florianopolis, SC, DISTRITO LITORÂNEO
+409F050366CE4CA2BF8812726CD051FF, 18/10/2012 10:05:44, Cartão de Crédito, Cancelado, 1.5, Sergio Cioban Filho, cioban@gmail.com, 17/01/1984, Florianopolis, SC, DISTRITO LITORÂNEO
+2C520AE3C76C489FB30CC322FBAF7B16, 18/10/2012 10:17:58, Cartão de Crédito, Cancelado, 1.5, Sergio Cioban Filho, cioban@gmail.com, 17/01/1984, Florianopolis, SC, DISTRITO LITORÂNEO
+331873775, 18/10/2012 12:27:28, Federação depósito, Completo, 150.0, Felipe  Furlaneto Perez, felipe_furlaneto@hotmail.com, 18/06/1993, Cambé, PR, DISTRITO NORTE-NOVO
+37972198, 18/10/2012 14:28:55, Federação depósito, Completo, 135.0, Alessandra Bezerra, aleferreirabezerra@yahoo.com.br, 27/01/1971, Itatiaia, RJ, Outras regiões
+DFE6D56DB8B54DFEB1B6525955E0E90E, 04/10/2012 21:12:38, Cartão de Crédito, Completo, 150.0, Fabiano Aguilar Corrêa, fabiano.c.aguilar@gmail.com, 16/09/1993, Santo Antônio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+D6EC308606C74AF8A6BA324BD29BA070, 18/10/2012 21:45:09, Boleto, Completo, 165.0, Marcio Venancio, marcio.venancio@gmail.com, 06/03/1983, Curitiba, PR, DISTRITO METROPOLITANO
+6E60A76480264E9BA68EFBAB1E9D6B3A, 18/10/2012 22:13:01, Cartão de Crédito, Cancelado, 150.0, Jennifer Hellen Simões Leita, emanuellimoreira@r7.com, 11/07/1991, Londrina, PR, DISTRITO NORTE-NOVO
+867797D6C88B46A4BA27612AFF8884B3, 18/10/2012 22:21:03, Cartão de Crédito, Cancelado, 150.0, Jennifer Hellen Simões Leita, emanuellimoreira@r7.com, 11/07/1991, Londrina, PR, DISTRITO NORTE-NOVO
+D87D114CD9D242E787FB062C36B19D37, 05/10/2012 00:43:14, Cartão de Crédito, Completo, 150.0, Kamila Camargo de sousa, kmla_camargo@hotmail.com, 10/10/1988, Ibiporã, PR, DISTRITO NORTE-NOVO
+9D552095824F4D43B474D93EE65ADDC9, 15/10/2012 22:11:38, Boleto, Completo, 135.0, Gizele Santana, gizele-s@hotmail.com, 19/03/1991, Chapeco, SC, DISTRITO SERRANO
+494E1B3103BD433DB454ADE0F135050E, 04/10/2012 10:32:31, Boleto, Completo, 150.0, jaqueline nunes da costa, jaquelinencosta@hotmail.com, 01/08/1980, cornélio procópio, PR, DISTRITO NORTE-PIONEIRO II
+722414565, 19/10/2012 10:37:02, Federação depósito, Em Análise, 150.0, thiago andrade, thyrepresentacoes@hotmail.com, 01/11/1981, arapongas, PR, DISTRITO CENTRO-NORTE
+D6EC308606C74AF8A6BA324BD29BA070, 18/10/2012 21:45:09, Boleto, Completo, 165.0, Marcio Venancio, marcio.venancio@gmail.com, 06/03/1983, Curitiba, PR, DISTRITO METROPOLITANO
+20B2CB3C3D1D430C98062F98B85EE1E5, 20/10/2012 15:30:21, Boleto, Completo, 150.0, Victor Cruz, victor.hg.cruz@gmail.com, 28/09/1995, Londrina, PR, DISTRITO NORTE-NOVO
+40D21C673401470F81EFE79644B2FBC8, 20/10/2012 21:34:20, Cartão de Crédito, Completo, 150.0, Jéssica  Diniz, je_dinizfigueira@hotmail.com, 12/01/1991, Londrina, PR, DISTRITO NORTE-NOVO
+47A59E109E6942A3A71FEE6113E82A81, 20/10/2012 21:43:29, Cartão de Crédito, Completo, 150.0, Rafaela Pamplona, rafa.pamplona@hotmail.com, 20/06/1980, Londrina, PR, DISTRITO NORTE-NOVO
+C4493AF3CCED40C0AE7B26FF81718661, 21/10/2012 17:45:34, Cartão de Crédito, Completo, 165.0, Beatriz Nogueira, beatriznogueira@outlook.com, 12/11/1993, Florianópolis, SC, DISTRITO LITORÂNEO
+449D9BBC3201442F8D091201A1ACBDC2, 21/10/2012 23:52:19, Cartão de Crédito, Completo, 135.0, Eli Junior, elijvieira@gmail.com, 22/09/1989, Maringá, PR, DISTRITO NOROESTE
+652537239, 22/10/2012 00:17:43, Federação depósito, Completo, 135.0, Caio  Linares, linarescaio@gmail.com, 08/11/1996, Maringá, PR, DISTRITO NOROESTE
+DC00683ADA074B55B17A46537347FB34, 22/10/2012 09:52:07, Cartão de Crédito, Completo, 150.0, Melissa Gil Goreske, melissamiura@hotmail.com, 07/01/1980, Londrina, PR, DISTRITO NORTE-NOVO
+702206917, 22/10/2012 11:25:25, Federação depósito, Completo, 135.0, Maylla Toledo, falonada00@hotmail.com, 11/08/1990, Paranavaí, PR, DISTRITO NOROESTE
+426345259, 22/10/2012 11:55:57, Federação depósito, Em Análise, 150.0, Pr.Evaldo Villa Nova, pr.evaldovillanova@hotmail.com, 12/12/1964, São João do Ivaí, PR, DISTRITO CENTRO-NORTE
+198733F5705E4E37B2C69F6665456284, 22/10/2012 11:56:01, Cartão de Crédito, Cancelado, 165.0, Kéren Wesley Cascione, kerencascione@gmail.com, 05/04/1988, Florianopolis, SC, DISTRITO LITORÂNEO
+2D6B95AA42224C9C95501DF0C7BB7D0F, 22/10/2012 11:59:43, Cartão de Crédito, Cancelado, 165.0, Kéren Wesley Cascione, kerencascione@gmail.com, 05/04/1988, Florianopolis, SC, DISTRITO LITORÂNEO
+803296889, 22/10/2012 13:32:57, Federação depósito, Completo, 165.0, Matheus Wesley, matheuswsouza85@hotmail.com, 22/04/1985, Curitiba, PR, DISTRITO METROPOLITANO
+981D5825A9ED43779FF28EA52D78319D, 08/10/2012 17:26:45, Cartão de Crédito, Completo, 150.0, Glaucilene  Gonçalves Lopes, lenelopes2@hotmail.com, 19/07/1974, Londrina, PR, DISTRITO NORTE-NOVO
+A54A8122866F43F3813DB62FC5D5F9B0, 22/10/2012 19:23:07, Cartão de Crédito, Completo, 135.0, Larissa Moya, larissa.moya@hotmail.com, 15/02/1990, Paranavaí, PR, DISTRITO NOROESTE
+902927297, 22/10/2012 19:32:29, Federação depósito, Em Análise, 150.0, Julio Cesar da Silva Oliveira, julio_static@hotmail.com, 24/03/1989, Assai, PR, DISTRITO NORTE-NOVO
+3A98C347145A4236A2026127C2811556, 22/10/2012 19:45:41, Cartão de Crédito, Completo, 135.0, washington belmont, washington_afram@hotmail.com, 08/01/1991, paranavai, PR, DISTRITO NOROESTE
+49D90C14C1F84F4483AB82D2BEAD2683, 22/10/2012 19:50:39, Cartão de Crédito, Completo, 135.0, Renan Tissot, renan_tissot@hotmail.com, 13/07/1985, Paranavaí, PR, DISTRITO NOROESTE
+E241A4505ACA4654AD87BD2D33B64686, 22/10/2012 19:56:43, Cartão de Crédito, Completo, 135.0, ISMAEL DUARTE, sonaldo.msn@hotmail.com, 11/05/1991, paranavai, PR, DISTRITO NOROESTE
+7B951FCFD75244DAB8555368981F8E78, 22/10/2012 21:10:51, Boleto, Aguardando Pagto, 135.0, iara aguirre, iarinha_mayara@hotmail.com, 11/12/1994, foz do iguaçu, PR, DISTRITO SUDOESTE
+F8E0D87E65454529B39A1E0952A5B0DE, 08/10/2012 21:02:21, Cartão de Crédito, Completo, 150.0, Vinicius Nogueira Costa, vinicius_n4@hotmail.com, 25/05/1994, Londrina, PR, DISTRITO NORTE-NOVO
+D0E9C63568A340C993740723A294F22D, 22/10/2012 22:54:41, Boleto, Completo, 165.0, Carolina Mayumi Tanaka, cmt_fc@hotmail.com, 09/04/1988, Curitiba, PR, DISTRITO METROPOLITANO
+7267429735DC47FC9E4A6B294ADFAC2C, 22/10/2012 22:54:22, Cartão de Crédito, Completo, 150.0, Cláudia  Sordi, c.sordi@hotmail.com, 04/01/1991, Londrina, PR, DISTRITO NORTE-NOVO
+12AFD0E6698E47EF82BF7005467DF142, 22/10/2012 23:21:39, Cartão de Crédito, Completo, 150.0, Daniel  de Oliveira Figueiredo, daniel.minas.fig@gmail.com, 15/03/1988, Londrina, PR, DISTRITO NORTE-NOVO
+A00BEDEE60354D94A40BC2038FD4FC13, 22/10/2012 23:25:08, Cartão de Crédito, Completo, 150.0, Fernanda Sordi, nandasordi@hotmail.com, 16/06/1989, Londrina, PR, DISTRITO NORTE-NOVO
+A4F3ACA57A9A4CEBABC2C158D199A3B3, 22/10/2012 23:53:30, Cartão de Crédito, Completo, 150.0, Emanuelli Moreira, manusinha_microcamp@hotmail.com, 20/01/1991, Londrina, PR, DISTRITO NORTE-NOVO
+FEE3E233F74240D38266E05FE27582E9, 23/10/2012 00:14:11, Cartão de Crédito, Completo, 150.0, Jessé Carrapeiro, jee-drummer@hotmail.com, 11/11/1989, Cambará, PR, DISTRITO NORTE-PIONEIRO II
+362754810, 23/10/2012 01:49:18, Federação depósito, Completo, 135.0, Natália Henriques, natyhenriques88@gmail.com, 21/12/1988, Maringá, PR, DISTRITO NOROESTE
+20B2CB3C3D1D430C98062F98B85EE1E5, 20/10/2012 15:30:21, Boleto, Completo, 150.0, Victor Cruz, victor.hg.cruz@gmail.com, 28/09/1995, Londrina, PR, DISTRITO NORTE-NOVO
+826467735, 23/10/2012 10:53:19, Federação depósito, Completo, 135.0, Caio  Aristides Malaquias de Sales, caiosales88@hotmail.com, 23/10/1988, Paranavai, PR, DISTRITO NOROESTE
+830F12BABC8449AC8C3DED04C55FCBC8, 23/10/2012 11:00:29, Cartão de Crédito, Completo, 135.0, Jordana  Witschi, jordana.witschi@yahoo.de, 26/10/1989, Maringá, PR, DISTRITO NOROESTE
+302646773, 23/10/2012 13:12:19, Federação depósito, Em Análise, 135.0, Steffany  dos Santos Maciel, steffanymaciel@gmail.com, 12/03/1994, Foz do Iguacu, PR, DISTRITO SUDOESTE
+979A9BAD634D44B58E262B31CF6E6A0A, 23/10/2012 13:31:09, Boleto, Aguardando Pagto, 135.0, Adriana da Silva Finkler, adriana-finkler@hotmail.com, 27/05/1982, Foz do Iguaçu, PR, DISTRITO SUDOESTE
+578CD28814A84EF39D7CCC70829C090F, 23/10/2012 13:56:49, Boleto, Completo, 135.0, Juarez Andrade, metox.paranavai@gmail.com, 05/05/1965, Paranavaí, PR, DISTRITO NOROESTE
+7801C8BAC4C04F3491719FB7D883AF53, 09/10/2012 15:08:32, Cartão de Crédito, Completo, 135.0, rosangela bauke, rosangela_bauke@hotmail.com, 15/03/1970, chapecó, SC, Outras regiões
+261420135, 23/10/2012 15:26:50, Federação depósito, Em Análise, 135.0, Henrique Oliveira, riquecristao@gmail.com, 19/02/1991, MARINGÁ, PR, DISTRITO NOROESTE
+442907377, 23/10/2012 15:55:24, Federação depósito, Completo, 135.0, Allysson Queiroz Rodrigues, allquero@hotmail.com, 04/08/1988, Maringá, PR, DISTRITO NOROESTE
+807536083, 23/10/2012 16:40:22, Federação depósito, Em Análise, 150.0, Antonio Carlos Germano Siqueira Carvalho, antonio.spi@hotmail.com, 04/12/1989, São Pedro do Ívai, PR, DISTRITO CENTRO-NORTE
+E981758A991A455E851328C87315CBC8, 23/10/2012 17:57:59, Cartão de Crédito, Completo, 150.0, Lívia Henares, livia_bio88@hotmail.com, 08/12/1988, Ibaiti, PR, DISTRITO NORTE-PIONEIRO I
+A9C23726C857488DB19A1308393048BF, 23/10/2012 18:17:24, Boleto, Aguardando Pagto, 165.0, Danielle Carvalho de Lima, daninha-lima@hotmail.com, 12/03/1986, Curitiba, PR, DISTRITO METROPOLITANO
+E13AA6C8BE594D0B9762310C6BB48969, 23/10/2012 19:26:35, Cartão de Crédito, Completo, 135.0, Suelen Cristina Kiljander Adami, suu.kiljander@gmail.com, 14/06/1988, Maringa, PR, DISTRITO NOROESTE
+F72EF7B4D4434998AB4D0D1FDBA66784, 23/10/2012 20:01:16, Boleto, Completo, 150.0, Cheris Sisti Oliveira, manoelmoreiras@hotmail.com, 25/08/1988, Londrina, PR, DISTRITO NORTE-NOVO
+546561875, 23/10/2012 23:07:57, Federação depósito, Em Análise, 165.0, Luiza Pradella, luizapradella@hotmail.com, 01/10/1988, Balneário Camboriú, SC, DISTRITO LITORÂNEO
+E3D36BFFAE454F6B8BED41CC28932BC5, 23/10/2012 23:06:15, Cartão de Crédito, Completo, 150.0, FRACIELLY FRANÇÓIA, fran.francoia@hotmail.com, 15/10/1986, ANDIRÁ, PR, DISTRITO NORTE-PIONEIRO I
+274245BB18194E8D892109BB75E0E171, 23/10/2012 23:02:43, Cartão de Crédito, Cancelado, 165.0, Iohana Beyersdorff, ioio_b@hotmail.com, 28/04/1995, Joinville, SC, DISTRITO LITORÂNEO
+A707CA4382EA4F52AB5C3A3431E3A5D2, 23/10/2012 23:11:26, Cartão de Crédito, Completo, 135.0, camila zani pazzim, camilazp@unochapeco.edu.br, 02/08/1988, chapeco, SC, DISTRITO SERRANO
+121E266FF0394AD1B0B9DFA7C9C6CEA2, 23/10/2012 23:38:17, Cartão de Crédito, Cancelado, 165.0, Iohana Beyersdorff, ioio_b@hotmail.com, 28/04/1995, Joinville, SC, DISTRITO LITORÂNEO
+416421079, 24/10/2012 00:02:54, Federação depósito, Em Análise, 165.0, Lisiane Cabral, Lisiane.cabral@yahoo.com.br, 16/04/1989, Curitiba, PR, DISTRITO METROPOLITANO
+D0E9C63568A340C993740723A294F22D, 22/10/2012 22:54:41, Boleto, Completo, 165.0, Carolina Mayumi Tanaka, cmt_fc@hotmail.com, 09/04/1988, Curitiba, PR, DISTRITO METROPOLITANO
+578CD28814A84EF39D7CCC70829C090F, 23/10/2012 13:56:49, Boleto, Completo, 135.0, Juarez Andrade, metox.paranavai@gmail.com, 05/05/1965, Paranavaí, PR, DISTRITO NOROESTE
+44F33810019A47DEAC3FA179A268C1D2, 09/10/2012 13:22:09, Boleto, Completo, 150.0, Marina  Pradal, marina.pradal@hotmail.com, 26/07/1992, Londrina, PR, DISTRITO NORTE-NOVO
+78B689C3356B4C6F9BC67E925A5039E0, 10/10/2012 12:52:28, Cartão de Crédito, Completo, 150.0, Paula Camilla  Ulinski, pulinski@milenia.com.br, 30/06/1988, Londrina, PR, DISTRITO NORTE-NOVO
+440E0AE9429844E5A6B292109843F339, 24/10/2012 12:57:46, Cartão de Crédito, Completo, 135.0, Gibran  Palma, gti_v8@hotmail.com, 28/12/1980, Chapecó, SC, DISTRITO SERRANO
+AA7F7A5166804508988A43A30D05CDB5, 24/10/2012 13:07:22, Cartão de Crédito, Completo, 135.0, Tatiane De Ré, tatidere@hotmail.com, 19/01/1985, Chapecó, SC, DISTRITO SERRANO
+1AA6CDC6A6AB417694D0E571169B2DD7, 10/10/2012 13:41:53, Cartão de Crédito, Completo, 150.0, Matheus Cury Sahão, msahao@hotmail.com, 19/02/1987, Londrin, PR, DISTRITO NORTE-NOVO
+23F3BF93AA2445AD813824703CC662A4, 24/10/2012 14:21:15, Cartão de Crédito, Completo, 150.0, Davi Ferreira Lima, stiflergospel@hotmail.com, 29/05/1991, Ibaiti, PR, DISTRITO NORTE-PIONEIRO I
+865800730, 24/10/2012 23:52:59, Federação depósito, Em Análise, 150.0, Renan Pagno, renanpagno@bol.com.br, 01/09/1994, Santo Antonio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+222640249, 25/10/2012 10:52:30, Federação depósito, Em Análise, 135.0, Fabiano Carvalho Zydek, fabianocarvalho_@hotmail.com, 11/07/1991, Corbélia, PR, DISTRITO SUDOESTE
+2ED18604E7D34A48AF60D8A2D2C9950D, 25/10/2012 11:11:56, Boleto, Aguardando Pagto, 150.0, Helen Cristina Santos Marques, helen.cmarques@hotmail.com, 22/07/1988, Londrina, PR, DISTRITO NORTE-NOVO
+88A4879A76C54D74A2096ABBA39239A2, 11/10/2012 12:17:23, Cartão de Crédito, Completo, 135.0, LEANDRO MUNIZ, mleandro.com.br@live.com, 24/10/1979, CHAPECO, SC, Outras regiões
+B2596A76D72F4E4D8048DF8D3C474B1C, 11/10/2012 13:23:58, Cartão de Crédito, Completo, 135.0, Andersson  S. Silva, ander90cco@gmail.com, 04/05/1990, Chapecó, SC, DISTRITO SERRANO
+697123846, 25/10/2012 17:43:37, Federação depósito, Em Análise, 150.0, Ruth Watanabe, yuk_nutri@hotmail.com, 30/01/1987, ibiporã, PR, DISTRITO NORTE-NOVO
+529B1667567F4DB6B788473027006523, 25/10/2012 18:10:58, Cartão de Crédito, Completo, 150.0, Emanuel Lorenzini da Costa, lorencosta_@hotmail.com, 29/07/1977, Londrina, PR, DISTRITO NORTE-NOVO
+354189652, 25/10/2012 20:17:47, Federação depósito, Em Análise, 150.0, Wesley Melo Ribeiro, wmr.20@hotmail.com, 20/09/1993, Assai, PR, DISTRITO NORTE-NOVO
+AD76C2FC6DFA46CF9B1018C1DDD4CBAD, 25/10/2012 23:10:49, Cartão de Crédito, Completo, 150.0, Flavio Eickhoff, flavioeick@hotmail.com, 06/06/1980, Curitiba, PR, DISTRITO CENTRO-NORTE
+D7E649E5E79948EAAB1A02245149E5AB, 09/10/2012 16:19:30, Boleto, Completo, 135.0, Thanata Ellen Loubak Lima, natalye.steffen@unoesc.edu.br, 14/08/1995, Chapecó, SC, DISTRITO SERRANO
+7D42E99BBC784DF5BF10A4A6AF8C6E9D, 09/10/2012 16:06:36, Boleto, Completo, 135.0, Dandara Cristina Loubak Lima, dandy-lima@hotmail.com, 14/01/1994, Chapecó, SC, DISTRITO SERRANO
+22D00497460E4325A21E5B2F5DC27424, 12/10/2012 10:53:33, Cartão de Crédito, Completo, 150.0, Benedito Neto, neto_vitorino@hotmail.com, 03/03/1988, Londrina, PR, DISTRITO NORTE-NOVO
+4EFE6F99A8A043ADA5EBB9637BFA6298, 12/10/2012 11:22:46, Cartão de Crédito, Completo, 150.0, Tatiane Vitorino, tatynha_amaral@sercomtel.com.br, 23/02/1986, Londrina, PR, DISTRITO NORTE-NOVO
+7A4D87DDE66B4556928CDE344D6B78E4, 12/10/2012 18:38:07, Cartão de Crédito, Completo, 150.0, Diego  Estevam, diegodavy10@gmail.com, 28/12/1992, londrina, PR, DISTRITO NORTE-NOVO
+35CA4475B3C948968613551AF7F9E96D, 12/10/2012 20:34:54, Cartão de Crédito, Completo, 150.0, Fernanda Medeiros Cia, fmcia@hotmail.com, 27/12/1984, Cambará, PR, DISTRITO NORTE-PIONEIRO II
+111B3487A90E4DD6BEE2A8A9D2E866A0, 12/10/2012 22:23:38, Cartão de Crédito, Completo, 135.0, caroline collins, carol-jesus-@hotmail.com, 16/05/1987, chapecó, SC, Outras regiões
+F72EF7B4D4434998AB4D0D1FDBA66784, 23/10/2012 20:01:16, Boleto, Completo, 150.0, Cheris Sisti Oliveira, manoelmoreiras@hotmail.com, 25/08/1988, Londrina, PR, DISTRITO NORTE-NOVO
+0618D123F83A4BE6A891BBD1EF34B284, 13/10/2012 11:58:02, Cartão de Crédito, Completo, 150.0, Juliana  de A. B. Gualiume, joli2504@hotmail.com, 25/04/1985, Santo Ant. da Platina, PR, DISTRITO NORTE-PIONEIRO I
+F7517694CC4446639BF16E08BCE1E2FC, 13/10/2012 12:04:12, Cartão de Crédito, Completo, 150.0, Rogério  Gualiume, rogeriogualiume@hotmail.com, 10/06/1981, Santo Ant. da Platina, PR, DISTRITO NORTE-PIONEIRO I
+17A0F9EFDFAB4AF3AC03556748A5F3F1, 14/10/2012 00:16:37, Cartão de Crédito, Completo, 150.0, Marcio  Maciel, marcioandre_21@hotmail.com, 15/12/1982, Londrina, PR, DISTRITO NORTE-NOVO
+F1F597A774994200B0FD173EF90CACDE, 14/10/2012 23:26:47, Boleto, Cancelado, 165.0, Fernando Oliveira, f.oliveirabr@gmail.com, 23/07/1990, Araucária, PR, DISTRITO SUL PARANAENSE
+A56F75FC340C424C80AAC39E30064A53, 14/10/2012 23:36:00, Boleto, Cancelado, 165.0, Carla  Arieta, carlaarieta@hotmail.com, 13/03/1987, Araucária, PR, DISTRITO SUL PARANAENSE
+93431403, 28/10/2012 11:41:48, Federação depósito, Completo, 150.0, Karol Seidel, kb.seidel@hotmail.com, 26/10/1990, SAP, PR, DISTRITO NORTE-PIONEIRO I
+745732509, 28/10/2012 11:48:50, Federação depósito, Completo, 150.0, Jonas Almeida, jgalmeida1993@gmail.com, 19/07/1993, SAP, PR, DISTRITO NORTE-PIONEIRO I
+A7193E2D88C746318DFF8BA1D775ED9D, 28/10/2012 13:43:15, Cartão de Crédito, Completo, 165.0, Giovana Gonçalves Correa, giovanacorrea2@gmail.com, 01/12/1993, Joinville, SC, DISTRITO LITORÂNEO
+DB1A5F9663CF46978F7C96A20F5B1D9F, 14/10/2012 17:06:26, Cartão de Crédito, Completo, 150.0, Lilian Marques, marqueslilian@hotmail.com, 20/08/1979, Londrina, PR, DISTRITO NORTE-NOVO
+1604A9551CF44E1EADAF4B62B30FE8A2, 14/10/2012 18:12:43, Cartão de Crédito, Completo, 150.0, Douglas    Santos Silva, douglas_missao@hotmail.com, 07/09/1989, londrina, PR, DISTRITO NORTE-NOVO
+662F2F2EBC804DA3ACF33D624DDF73B5, 14/10/2012 21:59:41, Cartão de Crédito, Completo, 150.0, Flávia Gabriela Meserlian, flaah_meserlian@hotmail.com, 10/10/1994, Arapongas, PR, DISTRITO CENTRO-NORTE
+CFE5846BB8574F8786BF2C3B175B9A24, 14/10/2012 22:58:22, Cartão de Crédito, Completo, 135.0, FLÁVIA  CRISTINA DE SOUZA, flavinha_cris89@hotmail.com, 10/11/1989, PARANAVAÍ, PR, DISTRITO NOROESTE
+CEC0C2BFA6034FA0BFAB4FBBA818FE7F, 14/10/2012 23:05:24, Cartão de Crédito, Completo, 135.0, Pedro  Paulo da Silva Junior, pedrometox@hotmail.com, 02/06/1984, Paranavaí, PR, DISTRITO NOROESTE
+D3E330501EDF4847AB44DDFB2D5E1779, 14/10/2012 23:26:02, Cartão de Crédito, Completo, 150.0, Hugo Freitas, hugovendaslivelon@hotmail.com, 08/01/1983, londrina, PR, DISTRITO NORTE-NOVO
+00163F7F904E491B9C803E3E15062281, 29/10/2012 00:53:30, Pagamento Online, Completo, 165.0, Paulo Humaitá, paulohumaita@yahoo.com.br, 08/06/1987, Curitiba, PR, DISTRITO SUL PARANAENSE
+95FF4C52AC6744D8B2F2B46F15225126, 15/10/2012 10:12:21, Boleto, Cancelado, 165.0, Gustavo Pereira, gustavolopespereira@yahoo.com.br, 03/05/1989, São Bernardo do Campo, SP, DISTRITO LITORÂNEO
+E82500A72F8A47ED8BEA876E52A78EC3, 15/10/2012 14:12:42, Boleto, Cancelado, 135.0, Ana Carolina Lopes Silva, a.carolinalo@hotmail.com, 19/07/1993, Cascavel, AC, DISTRITO SUDOESTE
+F6616E1B6F2F418E8287EA947A6CEE14, 15/10/2012 21:57:46, Boleto, Cancelado, 165.0, Bruna Barreto, bba_bruna@hotmail.com, 11/02/1986, Araucária, PR, DISTRITO SUL PARANAENSE
+F8BBE3B700BB4AC7BD8CBF3771F2D39D, 15/10/2012 22:19:28, Boleto, Cancelado, 165.0, henrique almeida, henriquerdealmeida@hotmail.com, 05/02/1987, araucaria, PR, DISTRITO SUL PARANAENSE
+4161A4425F3E41E0A79C59AD4E57666C, 29/10/2012 10:04:13, Boleto, Aguardando Pagto, 165.0, Gustavo Pereira, gustavolopespereira@yahoo.com.br, 03/05/1989, São Bernardo do Campo, SP, DISTRITO LITORÂNEO
+00163F7F904E491B9C803E3E15062281, 29/10/2012 00:53:30, Pagamento Online, Completo, 165.0, Paulo Humaitá, paulohumaita@yahoo.com.br, 08/06/1987, Curitiba, PR, DISTRITO SUL PARANAENSE
+DBD2D535624444878F31F9AFC45D132E, 15/10/2012 10:29:51, Cartão de Crédito, Completo, 150.0, maikon tiago rosa  rosa , tiagomt@hotmail.com, 06/05/1983, cornelio procopio , PR, DISTRITO NORTE-PIONEIRO II
+94D1610F93494282B09B04F1786296F0, 15/10/2012 10:43:18, Cartão de Crédito, Completo, 150.0, Gustavo Pedroso scarpin, pedrosogustavo69@gmail.com, 25/11/1993, Ibiporã, PR, DISTRITO NORTE-NOVO
+BD3DD468EDED49A3BAFCD627EE18E9D1, 15/10/2012 10:47:14, Cartão de Crédito, Completo, 150.0, Gustavo Pedroso scarpin, pedrosogustavo69@gmail.com, 25/11/1993, Ibiporã, PR, DISTRITO NORTE-NOVO
+3744151540BB4D5DB09578FC2320B19A, 15/10/2012 12:41:09, Cartão de Crédito, Completo, 135.0, jhonatan  candido de souza, jhonatan_candido@hotmail.com, 23/07/1989, são bernardo do campo, SP, Outras regiões
+273A36E08FA44D0ABD18DF09FF433C0B, 15/10/2012 12:48:25, Cartão de Crédito, Completo, 150.0, Fernanda Manoel, fernanda_senai@hotmail.com, 24/10/1988, Londrina, PR, DISTRITO NORTE-NOVO
+D01FE0493E414B92AF986AC7F7FBC4B6, 29/10/2012 13:42:53, Boleto, Aguardando Pagto, 150.0, stella vicente, stellavicente@ymail.com, 11/07/1982, londrina, PR, DISTRITO NORTE-PIONEIRO I
+EEA75B40FA1F4EC09689114B5DE70E15, 15/10/2012 13:41:35, Cartão de Crédito, Completo, 150.0, Jéssica  Rodrigues de Freitas, jessicarfreitas@gmail.com, 29/07/1983, Jandaia do Sul, PR, DISTRITO CENTRO-NORTE
+E0B5E37CF791491385AE2FFE1FB297F5, 15/10/2012 14:46:40, Cartão de Crédito, Completo, 150.0, Paulo Ricardo Andrade, paulinho_andradecp@hotmail.com, 18/03/1989, Cornélio Procópio, PR, DISTRITO NORTE-PIONEIRO II
+54669CC6AB4140DB937EEB8AFAC13052, 15/10/2012 14:53:25, Cartão de Crédito, Completo, 150.0, David Willian Lopes, davidwillianl@hotmail.com, 21/04/1989, Londrina, PR, DISTRITO NORTE-NOVO
+44F0BA80BEBF493A836F87ECEAD9E960, 29/10/2012 17:07:09, Boleto, Completo, 150.0, Carlos Almeida, pr.cal@hotmail.com, 12/09/1984, Santo Antonio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+826335B93D854BEF8EDFA9D507C15247, 15/10/2012 17:16:33, Cartão de Crédito, Completo, 135.0, Gieza Santana, gyezafs@hotmail.com, 04/08/1987, CHapecó, SC, DISTRITO SERRANO
+569EE9CC1D2640FBAE7BDAC6E5C46FF8, 15/10/2012 17:50:58, Cartão de Crédito, Completo, 135.0, Mariana Leticia , mariana_leticia_silva@hotmail.com, 22/09/1995, Paranavai, PR, DISTRITO NOROESTE
+84207E5172B744F79BCAD6ED29AAC516, 15/10/2012 18:43:07, Cartão de Crédito, Completo, 150.0, FLAVIO LUIS HAYASHI, flavio_lh@yahoo.com.br, 18/04/1991, LONDRINA, PR, DISTRITO NORTE-NOVO
+FC08A3AEB47A46CD95E697B431303F7E, 15/10/2012 20:49:23, Cartão de Crédito, Completo, 165.0, Jhenifer Morais, jhenictba7@hotmail.com, 12/04/1990, curitiba, PR, DISTRITO METROPOLITANO
+9D517DBBE13B437BBF2CB780FB4F3E67, 15/10/2012 21:08:48, Cartão de Crédito, Completo, 165.0, Martha Bachtold, martha_bach@hotmail.com, 06/11/1989, Curitiba, PR, DISTRITO METROPOLITANO
+0B8813B16FD24CAFA16FAB97BE5BB157, 15/10/2012 21:32:01, Cartão de Crédito, Completo, 165.0, Suelen  Matias Vieira, sumv.19@hotmail.com, 04/06/1986, São José dos Pinhais, PR, DISTRITO METROPOLITANO
+ABBEDDA9CCBB45C19D10BF1FD4643DBE, 15/10/2012 21:59:33, Cartão de Crédito, Completo, 150.0, Raquel Esteves, raquel.r.esteves@hotmail.com, 29/09/1989, Londrina, PR, DISTRITO NORTE-NOVO
+A4D75325347F44DBAE08AA166E202819, 15/10/2012 22:10:37, Cartão de Crédito, Completo, 165.0, Ligia Franco de Brito, ligia_fr@hotmail.com, 28/05/1983, Curitiba, PR, DISTRITO METROPOLITANO
+AFE79B087C0F4ACCA6E641ECEBB3B45A, 15/10/2012 22:16:07, Cartão de Crédito, Completo, 135.0, Renan Esteves, esteves.renanr@gmail.com, 25/11/1991, Londrina, PR, DISTRITO NOROESTE
+FBCC469817AC4D0EA0B0E02EB1E40481, 15/10/2012 22:21:08, Cartão de Crédito, Completo, 165.0, leticia nascimento, leticia-educacaofisica@hotmail.com, 15/05/1989, curitiba, PR, DISTRITO SUL PARANAENSE
+2D62CA790C404A0D824C70F7EA33B1F3, 15/10/2012 22:29:06, Cartão de Crédito, Completo, 135.0, alexandre rosa, ale_xapeco@hotmail.com, 13/07/1983, chapeco, SC, Outras regiões
+6452B961AF5145D2AF9D6F5AF83FA6D5, 15/10/2012 23:36:33, Cartão de Crédito, Completo, 165.0, Ana Paula  Batista, ana_educacao.fisica@hotmail.com, 10/01/1988, Curitiba, AC, DISTRITO METROPOLITANO
+82E35987782E4D96A72E9B26110963DD, 30/10/2012 01:15:29, Cartão de Crédito, Completo, 135.0, Perikles Souza, pastorperikles@hotmail.com, 08/10/1968, Chapeco, SC, DISTRITO SERRANO
+BC5D462C656D4F0799BDFB0DCB2B155D, 13/10/2012 14:42:45, Boleto, Completo, 135.0, diego  plassa, diegoplassa@hotmail.com, 01/09/1988, londrina, PR, Outras regiões
+558731497, 30/10/2012 08:24:22, Federação depósito, Em Análise, 135.0, Saimon Pastório, saimonpastorio@yahoo.com.br, 05/01/1987, Chapecó, SC, DISTRITO SERRANO
+36073552, 30/10/2012 08:24:31, Federação depósito, Em Análise, 135.0, Saimon Pastório, saimonpastorio@yahoo.com.br, 05/01/1987, Chapecó, SC, DISTRITO SERRANO
+612486929, 30/10/2012 10:04:45, Federação depósito, Em Análise, 135.0, Bruna Pastório, brunininhaa@hotmail.com, 27/04/1990, Chapecó, SC, DISTRITO SERRANO
+472AB30F799D424A80DB63F7D2F6CD93, 16/10/2012 13:04:00, Cartão de Crédito, Completo, 165.0, Fernanda Helbing da Rosa, fernanda.helbingdarosa@gmail.com, 27/12/1989, Joinville, SC, DISTRITO LITORÂNEO
+181490350, 30/10/2012 13:42:10, Federação depósito, Em Análise, 150.0, Joyce  Barreto Fonseca, joycinhabarreto@hotmail.com, 22/05/1986, Santo Antonio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+84934741F5724E95815F31858323CED8, 16/10/2012 13:37:35, Cartão de Crédito, Completo, 135.0, Mauricio Canton, mc.canton@unochapeco.edu.br, 28/01/1991, mc.canton, SC, DISTRITO SERRANO
+DFAD8840BDB54C38835FD868EF3FA17E, 30/10/2012 17:40:37, Cartão de Crédito, Completo, 165.0, Aline Maria Seitenfus, alinem.seitenfus@gmail.com, 31/08/1990, Joinville, SC, DISTRITO LITORÂNEO
+2F1D2AF54D49477C97F2722F6B30519C, 16/10/2012 18:32:12, Cartão de Crédito, Completo, 135.0, MARISTELA CUNHA, maristelaeduarda7@yahoo.com.br, 13/07/1980, CHAPECO, SC, DISTRITO SERRANO
+6070E0C114C44AEA8BB1FA10CD2930EC, 16/10/2012 21:04:22, Cartão de Crédito, Completo, 150.0, angela amaral, ed.fisicaangela@hotmail.com, 19/01/1986, londrina, PR, DISTRITO NORTE-NOVO
+445764387, 30/10/2012 21:22:36, Federação depósito, Em Análise, 165.0, Debora Balmant Cruzeiro, debora_cruzeiro@hotmail.com, 15/02/1990, Curitiba, PR, DISTRITO METROPOLITANO
+A721A9883F2E44A8BCEC27DCDEF8E367, 16/10/2012 23:17:23, Cartão de Crédito, Completo, 165.0, Daniela Cauneto, daniela.cauneto@gmail.com, 10/11/1987, Curitiba, PR, DISTRITO METROPOLITANO
+FD07F125D2994958878E87CFA1D23092, 31/10/2012 00:22:04, Cartão de Crédito, Completo, 150.0, Flavia  Oliveira de Souza, griloolisouz@hotmail.com, 27/05/1983, Cambé, PR, DISTRITO NORTE-NOVO
+44F0BA80BEBF493A836F87ECEAD9E960, 29/10/2012 17:07:09, Boleto, Completo, 150.0, Carlos Almeida, pr.cal@hotmail.com, 12/09/1984, Santo Antonio da Platina, PR, DISTRITO NORTE-PIONEIRO I
+BEBE3D109FF340D7B96D1C5FC1F4A08B, 15/10/2012 21:16:02, Boleto, Completo, 135.0, Angélica  Bergamin, angelicabergamin@hotmail.com, 29/05/1990, Chapecó, SC, Outras regiões
+E9B2E19A43604DD38F83F52A6BF9983F, 17/10/2012 19:56:51, Boleto, Cancelado, 135.0, Rosane Muller, rohmuller@gmail.com, 27/03/1990, Cascavel, PR, DISTRITO SUDOESTE
+20121031091001, 31/10/2012 09:10:01, Federação depósito, Completo, 150.0, GUSTAVO NICOLETTI MACARINI, devnull@jovensdasexta.com, 31/10/2012, Londrina, PR, DISTRITO NORTE-NOVO
+20121031091101, 31/10/2012 09:11:01, Federação depósito, Completo, 135.0, Bruna Farat, devnull@jovensdasexta.com, 31/10/2012, Teresopolis, RJ, Outras regiões
+20121031091201, 31/10/2012 09:12:01, Federação depósito, Completo, 150.0, Liane Lie Toda, devnull@jovensdasexta.com, 31/10/2012, Assaí, PR, DISTRITO NORTE-NOVO

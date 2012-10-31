@@ -1,0 +1,396 @@
+30/10/2012 13:47:40 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 13:47:40 pagseguro: INFO -  -> POST
+30/10/2012 13:47:40 pagseguro: INFO -  -> Encoding=None
+30/10/2012 13:47:40 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 13:47:40 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 13:47:40 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 13:47:40 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 13:47:40 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 13:47:40 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 13:47:40 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 13:47:40 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 13:47:40 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 13:47:40 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 13:47:40 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 13:47:44 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 13:47:44 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 13:47:44 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 13:47:44 pagseguro: INFO - retorno=True
+30/10/2012 13:47:44 pagseguro: INFO - retorno=True
+30/10/2012 13:47:44 pagseguro: INFO - retorno=True
+30/10/2012 13:47:44 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 13:47:44 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 13:47:44 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 13:47:44 pagseguro: INFO -  Referencia = 050cf8a2b08811b546e69942bf2aeeffffc3b22e
+30/10/2012 13:47:44 pagseguro: INFO -  Referencia = 050cf8a2b08811b546e69942bf2aeeffffc3b22e
+30/10/2012 13:47:44 pagseguro: INFO -  Referencia = 050cf8a2b08811b546e69942bf2aeeffffc3b22e
+30/10/2012 13:47:44 pagseguro: INFO - username=Mauricio
+30/10/2012 13:47:44 pagseguro: INFO - username=Mauricio
+30/10/2012 13:47:44 pagseguro: INFO - username=Mauricio
+30/10/2012 13:47:44 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 13:47:44 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 13:47:44 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 13:47:44 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 13:47:44 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 13:47:44 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 13:47:44 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 13:47:44 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 13:47:44 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 17:48:49 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 17:48:49 pagseguro: INFO -  -> POST
+30/10/2012 17:48:49 pagseguro: INFO -  -> Encoding=None
+30/10/2012 17:48:49 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 17:48:49 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 17:48:49 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 17:48:49 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 17:48:49 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 17:48:49 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 17:48:49 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 17:48:49 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 17:48:49 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 17:48:49 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 17:48:49 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 17:48:51 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 17:48:51 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 17:48:51 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 17:48:51 pagseguro: INFO - retorno=True
+30/10/2012 17:48:51 pagseguro: INFO - retorno=True
+30/10/2012 17:48:51 pagseguro: INFO - retorno=True
+30/10/2012 17:48:51 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 17:48:51 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 17:48:51 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 17:48:51 pagseguro: INFO -  Referencia = 43eeb6a329aaaea7daa0abc4f57f22771c1a453b
+30/10/2012 17:48:51 pagseguro: INFO -  Referencia = 43eeb6a329aaaea7daa0abc4f57f22771c1a453b
+30/10/2012 17:48:51 pagseguro: INFO -  Referencia = 43eeb6a329aaaea7daa0abc4f57f22771c1a453b
+30/10/2012 17:48:51 pagseguro: INFO - username=aline_ms
+30/10/2012 17:48:51 pagseguro: INFO - username=aline_ms
+30/10/2012 17:48:51 pagseguro: INFO - username=aline_ms
+30/10/2012 17:48:51 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 17:48:51 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 17:48:51 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 17:48:51 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 17:48:51 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 17:48:51 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 17:48:51 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 17:48:51 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 17:48:51 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 17:49:11 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 17:49:11 pagseguro: INFO -  -> Retorno final
+30/10/2012 18:03:20 pagseguro: INFO - A inscricao de: aline_ms alterou de [Aprovado] para [Completo] - event[1]
+30/10/2012 20:18:43 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 20:18:43 pagseguro: INFO -  -> POST
+30/10/2012 20:18:43 pagseguro: INFO -  -> Encoding=None
+30/10/2012 20:18:43 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 20:18:43 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 20:18:43 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 20:18:43 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 20:18:43 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 20:18:43 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 20:18:43 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 20:18:43 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 20:18:43 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 20:18:43 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 20:18:43 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 20:18:44 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 20:18:44 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 20:18:44 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 20:18:44 pagseguro: INFO - retorno=True
+30/10/2012 20:18:44 pagseguro: INFO - retorno=True
+30/10/2012 20:18:44 pagseguro: INFO - retorno=True
+30/10/2012 20:18:44 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 20:18:44 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 20:18:44 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 20:18:44 pagseguro: INFO -  Referencia = dc90c403005b53d514b3000f7fff21bcd03e96ef
+30/10/2012 20:18:44 pagseguro: INFO -  Referencia = dc90c403005b53d514b3000f7fff21bcd03e96ef
+30/10/2012 20:18:44 pagseguro: INFO -  Referencia = dc90c403005b53d514b3000f7fff21bcd03e96ef
+30/10/2012 20:18:44 pagseguro: INFO - username=MARISTELA
+30/10/2012 20:18:44 pagseguro: INFO - username=MARISTELA
+30/10/2012 20:18:44 pagseguro: INFO - username=MARISTELA
+30/10/2012 20:18:44 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 20:18:44 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 20:18:44 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 20:18:44 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 20:18:44 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 20:18:44 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 20:18:44 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 20:18:44 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 20:18:44 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 21:17:21 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 21:17:21 pagseguro: INFO -  -> POST
+30/10/2012 21:17:21 pagseguro: INFO -  -> Encoding=None
+30/10/2012 21:17:21 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 21:17:21 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 21:17:21 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 21:17:21 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 21:17:21 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 21:17:21 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 21:17:21 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 21:17:21 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 21:17:21 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 21:17:21 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 21:17:21 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 21:17:23 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 21:17:23 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 21:17:23 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 21:17:23 pagseguro: INFO - retorno=True
+30/10/2012 21:17:23 pagseguro: INFO - retorno=True
+30/10/2012 21:17:23 pagseguro: INFO - retorno=True
+30/10/2012 21:17:23 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 21:17:23 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 21:17:23 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 21:17:23 pagseguro: INFO -  Referencia = ac6acb62e45b30bd36cb9c871cd6aba90a893f33
+30/10/2012 21:17:23 pagseguro: INFO -  Referencia = ac6acb62e45b30bd36cb9c871cd6aba90a893f33
+30/10/2012 21:17:23 pagseguro: INFO -  Referencia = ac6acb62e45b30bd36cb9c871cd6aba90a893f33
+30/10/2012 21:17:23 pagseguro: INFO - username=Angela
+30/10/2012 21:17:23 pagseguro: INFO - username=Angela
+30/10/2012 21:17:23 pagseguro: INFO - username=Angela
+30/10/2012 21:17:23 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 21:17:23 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 21:17:23 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 21:17:23 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 21:17:23 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 21:17:23 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 21:17:23 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 21:17:23 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 21:17:23 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 23:27:35 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 23:27:35 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 23:27:35 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 23:27:35 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+30/10/2012 23:27:35 pagseguro: INFO -  -> POST
+30/10/2012 23:27:35 pagseguro: INFO -  -> POST
+30/10/2012 23:27:35 pagseguro: INFO -  -> POST
+30/10/2012 23:27:35 pagseguro: INFO -  -> POST
+30/10/2012 23:27:35 pagseguro: INFO -  -> Encoding=None
+30/10/2012 23:27:35 pagseguro: INFO -  -> Encoding=None
+30/10/2012 23:27:35 pagseguro: INFO -  -> Encoding=None
+30/10/2012 23:27:35 pagseguro: INFO -  -> Encoding=None
+30/10/2012 23:27:35 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 23:27:35 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 23:27:35 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 23:27:35 pagseguro: INFO -  -> Mudado=ISO-8859-1
+30/10/2012 23:27:35 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 23:27:35 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 23:27:35 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 23:27:35 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+30/10/2012 23:27:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 23:27:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 23:27:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 23:27:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 23:27:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 23:27:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+30/10/2012 23:27:35 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 23:27:35 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 23:27:35 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 23:27:35 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 23:27:35 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 23:27:35 pagseguro: INFO -  -> Adicionando token e comando
+30/10/2012 23:27:35 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 23:27:35 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 23:27:35 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 23:27:35 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 23:27:35 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 23:27:35 pagseguro: INFO -  -> Realizando POST...
+30/10/2012 23:27:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 23:27:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 23:27:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 23:27:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 23:27:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 23:27:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+30/10/2012 23:27:36 pagseguro: INFO - retorno=True
+30/10/2012 23:27:36 pagseguro: INFO - retorno=True
+30/10/2012 23:27:36 pagseguro: INFO - retorno=True
+30/10/2012 23:27:36 pagseguro: INFO - retorno=True
+30/10/2012 23:27:36 pagseguro: INFO - retorno=True
+30/10/2012 23:27:36 pagseguro: INFO - retorno=True
+30/10/2012 23:27:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 23:27:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 23:27:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 23:27:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 23:27:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 23:27:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+30/10/2012 23:27:36 pagseguro: INFO -  Referencia = 202f42166f2faab3c3d9ea734478965e67747139
+30/10/2012 23:27:36 pagseguro: INFO -  Referencia = 202f42166f2faab3c3d9ea734478965e67747139
+30/10/2012 23:27:36 pagseguro: INFO -  Referencia = 202f42166f2faab3c3d9ea734478965e67747139
+30/10/2012 23:27:36 pagseguro: INFO -  Referencia = 202f42166f2faab3c3d9ea734478965e67747139
+30/10/2012 23:27:36 pagseguro: INFO -  Referencia = 202f42166f2faab3c3d9ea734478965e67747139
+30/10/2012 23:27:36 pagseguro: INFO -  Referencia = 202f42166f2faab3c3d9ea734478965e67747139
+30/10/2012 23:27:36 pagseguro: INFO - username=dcauneto
+30/10/2012 23:27:36 pagseguro: INFO - username=dcauneto
+30/10/2012 23:27:36 pagseguro: INFO - username=dcauneto
+30/10/2012 23:27:36 pagseguro: INFO - username=dcauneto
+30/10/2012 23:27:36 pagseguro: INFO - username=dcauneto
+30/10/2012 23:27:36 pagseguro: INFO - username=dcauneto
+30/10/2012 23:27:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 23:27:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 23:27:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 23:27:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 23:27:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 23:27:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+30/10/2012 23:27:36 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 23:27:36 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 23:27:36 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 23:27:36 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 23:27:36 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 23:27:36 pagseguro: INFO -  -> Criou o objeto subscribe
+30/10/2012 23:27:36 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 23:27:36 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 23:27:36 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 23:27:36 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 23:27:36 pagseguro: INFO -  -> Salvou no BD
+30/10/2012 23:27:36 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 00:26:04 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+31/10/2012 00:26:04 pagseguro: INFO -  -> POST
+31/10/2012 00:26:04 pagseguro: INFO -  -> Encoding=None
+31/10/2012 00:26:04 pagseguro: INFO -  -> Mudado=ISO-8859-1
+31/10/2012 00:26:04 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+31/10/2012 00:26:04 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 00:26:04 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 00:26:04 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 00:26:04 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 00:26:04 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 00:26:04 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 00:26:04 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 00:26:04 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 00:26:04 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 00:26:05 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 00:26:05 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 00:26:05 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 00:26:05 pagseguro: INFO - retorno=True
+31/10/2012 00:26:05 pagseguro: INFO - retorno=True
+31/10/2012 00:26:05 pagseguro: INFO - retorno=True
+31/10/2012 00:26:05 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 00:26:05 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 00:26:05 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 00:26:05 pagseguro: INFO -  Referencia = 43c3ff540c531ba2e1dd604a255f0227f982dc10
+31/10/2012 00:26:05 pagseguro: INFO -  Referencia = 43c3ff540c531ba2e1dd604a255f0227f982dc10
+31/10/2012 00:26:05 pagseguro: INFO -  Referencia = 43c3ff540c531ba2e1dd604a255f0227f982dc10
+31/10/2012 00:26:05 pagseguro: INFO - username=FlavinhaOliveira
+31/10/2012 00:26:05 pagseguro: INFO - username=FlavinhaOliveira
+31/10/2012 00:26:05 pagseguro: INFO - username=FlavinhaOliveira
+31/10/2012 00:26:05 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 00:26:05 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 00:26:05 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 00:26:05 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 00:26:05 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 00:26:05 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 00:26:05 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 00:26:05 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 00:26:05 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 02:03:17 pagseguro: INFO - A inscricao de: FlavinhaOliveira alterou de [Aprovado] para [Completo] - event[1]
+31/10/2012 05:00:08 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+31/10/2012 05:00:08 pagseguro: INFO -  -> POST
+31/10/2012 05:00:08 pagseguro: INFO -  -> Encoding=None
+31/10/2012 05:00:08 pagseguro: INFO -  -> Mudado=ISO-8859-1
+31/10/2012 05:00:08 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+31/10/2012 05:00:08 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 05:00:08 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 05:00:08 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 05:00:08 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 05:00:08 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 05:00:08 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 05:00:08 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 05:00:08 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 05:00:08 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 05:00:10 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 05:00:10 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 05:00:10 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 05:00:10 pagseguro: INFO - retorno=True
+31/10/2012 05:00:10 pagseguro: INFO - retorno=True
+31/10/2012 05:00:10 pagseguro: INFO - retorno=True
+31/10/2012 05:00:10 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 05:00:10 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 05:00:10 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 05:00:10 pagseguro: INFO -  Referencia = fcb08b663eb85252adcefbef5ff332cdfcbaca08
+31/10/2012 05:00:10 pagseguro: INFO -  Referencia = fcb08b663eb85252adcefbef5ff332cdfcbaca08
+31/10/2012 05:00:10 pagseguro: INFO -  Referencia = fcb08b663eb85252adcefbef5ff332cdfcbaca08
+31/10/2012 05:00:10 pagseguro: INFO - username=Carlo
+31/10/2012 05:00:10 pagseguro: INFO - username=Carlo
+31/10/2012 05:00:10 pagseguro: INFO - username=Carlo
+31/10/2012 05:00:10 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 05:00:10 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 05:00:10 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 05:00:10 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 05:00:10 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 05:00:10 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 05:00:10 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 05:00:10 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 05:00:10 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 05:28:35 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+31/10/2012 05:28:35 pagseguro: INFO -  -> POST
+31/10/2012 05:28:35 pagseguro: INFO -  -> Encoding=None
+31/10/2012 05:28:35 pagseguro: INFO -  -> Mudado=ISO-8859-1
+31/10/2012 05:28:35 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+31/10/2012 05:28:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 05:28:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 05:28:35 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 05:28:35 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 05:28:35 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 05:28:35 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 05:28:35 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 05:28:35 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 05:28:35 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 05:28:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 05:28:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 05:28:36 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 05:28:36 pagseguro: INFO - retorno=True
+31/10/2012 05:28:36 pagseguro: INFO - retorno=True
+31/10/2012 05:28:36 pagseguro: INFO - retorno=True
+31/10/2012 05:28:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 05:28:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 05:28:36 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 05:28:36 pagseguro: INFO -  Referencia = 4ccfeb8872850fcfb266a07b7da641a0de4467f2
+31/10/2012 05:28:36 pagseguro: INFO -  Referencia = 4ccfeb8872850fcfb266a07b7da641a0de4467f2
+31/10/2012 05:28:36 pagseguro: INFO -  Referencia = 4ccfeb8872850fcfb266a07b7da641a0de4467f2
+31/10/2012 05:28:36 pagseguro: INFO - username=angelicabergamin
+31/10/2012 05:28:36 pagseguro: INFO - username=angelicabergamin
+31/10/2012 05:28:36 pagseguro: INFO - username=angelicabergamin
+31/10/2012 05:28:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 05:28:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 05:28:36 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 05:28:36 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 05:28:36 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 05:28:36 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 05:28:36 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 05:28:36 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 05:28:36 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 06:02:49 pagseguro: INFO - A inscricao de: Carlo alterou de [Aguardando Pagto] para [Completo] - event[1]
+31/10/2012 06:03:16 pagseguro: INFO - A inscricao de: Carlo alterou de [Aprovado] para [Completo] - event[1]
+31/10/2012 07:18:42 pagseguro: INFO -   === Retorno do PAGSEGURO ===
+31/10/2012 07:18:42 pagseguro: INFO -  -> POST
+31/10/2012 07:18:42 pagseguro: INFO -  -> Encoding=None
+31/10/2012 07:18:42 pagseguro: INFO -  -> Mudado=ISO-8859-1
+31/10/2012 07:18:42 pagseguro: INFO - TOKEN=D13FFE7D567649CCA770F24C386500F0
+31/10/2012 07:18:42 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 07:18:42 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 07:18:42 pagseguro: INFO -  -> Processando o POST do PagSeguro
+31/10/2012 07:18:42 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 07:18:42 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 07:18:42 pagseguro: INFO -  -> Adicionando token e comando
+31/10/2012 07:18:42 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 07:18:42 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 07:18:42 pagseguro: INFO -  -> Realizando POST...
+31/10/2012 07:18:43 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 07:18:43 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 07:18:43 pagseguro: INFO -  -> Retorno do POST para o PagSeguro: VERIFICADO
+31/10/2012 07:18:43 pagseguro: INFO - retorno=True
+31/10/2012 07:18:43 pagseguro: INFO - retorno=True
+31/10/2012 07:18:43 pagseguro: INFO - retorno=True
+31/10/2012 07:18:43 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 07:18:43 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 07:18:43 pagseguro: INFO -  === Cadastrando compra no BD ===
+31/10/2012 07:18:43 pagseguro: INFO -  Referencia = 0aceb2ef3c8c8987a780694ea915081f89426762
+31/10/2012 07:18:43 pagseguro: INFO -  Referencia = 0aceb2ef3c8c8987a780694ea915081f89426762
+31/10/2012 07:18:43 pagseguro: INFO -  Referencia = 0aceb2ef3c8c8987a780694ea915081f89426762
+31/10/2012 07:18:43 pagseguro: INFO - username=rosane
+31/10/2012 07:18:43 pagseguro: INFO - username=rosane
+31/10/2012 07:18:43 pagseguro: INFO - username=rosane
+31/10/2012 07:18:43 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 07:18:43 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 07:18:43 pagseguro: INFO - event=Encontro regional de jovens 6RE  - 02/11/2012 a 04/11/2012 - Quatro barras-PR
+31/10/2012 07:18:43 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 07:18:43 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 07:18:43 pagseguro: INFO -  -> Criou o objeto subscribe
+31/10/2012 07:18:43 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 07:18:43 pagseguro: INFO -  -> Salvou no BD
+31/10/2012 07:18:43 pagseguro: INFO -  -> Salvou no BD

@@ -16,6 +16,7 @@ from datetime import datetime
 from random import randint
 from django.db.models import Q
 
+from pprint import pprint
 
 
 def user_is_in_federation_group(user):
@@ -79,16 +80,15 @@ def subscribe(request):
 				reference = user_profile.activation_key
 				yet_subscribe = None
 				try:
-					#yet_subscribe_check = event_subscribe.objects.get(id_event = int(form.data['id_event']), id_user = request.user.id )
 					yet_subscribe_check = event_subscribe.objects.filter(id_event = int(form.data['id_event']), id_user = request.user.id )
 					for subscribed in yet_subscribe_check:
-						if subscribed.StatusTransacao != 'Cancelado':
-							yet_subscribe = subscribed
-				except event_subscribe.DoesNotExist:
+						yet_subscribe = subscribed
+						if subscribed.StatusTransacao.encode('utf-8') == 'Cancelado' or subscribed.StatusTransacao == 'Cancelado':
+							yet_subscribe = None
+				except:
 					yet_subscribe = None
 
 				if yet_subscribe is not None:
-					#eventprice = str(yet_subscribe.event_price).replace('.',',')
 					eventprice = str('%.2f' % (yet_subscribe.event_price,)).replace('.',',')
 					response = render_to_response("subscribe.html", {'PAGE_NAME': 'Inscerver', 'eventdata': eventdata, 'eventprice': eventprice, 'pagseguro_email': settings.PAGSEGURO_EMAIL, 'reference': reference, 'event_subscribe': yet_subscribe, }, context_instance=RequestContext(request))
 
@@ -105,6 +105,8 @@ def subscribe(request):
 						response = render_to_response("subscribe.html", {'PAGE_NAME': 'Inscerver', 'eventdata': eventdata, 'eventprice_pag': eventprice_pag, 'eventprice': eventprice, 'reference': reference, 'pay_choice': request.POST['pay_choice'] }, context_instance=RequestContext(request))
 
 			elif (step.isdigit()) and (int(step) == 3):
+				log = LOG(True)
+				log.write("  === Nova inscricao LOCAL ===")
 				user = request.user
 				new_event = event.objects.get(pk = request.POST.get('id_event'))
 
@@ -112,7 +114,29 @@ def subscribe(request):
 				new_date = datetime.today().strftime("%d/%m/%Y %H:%M:%S")
 				new_ID = randint(1,1000000000)
 				new_subscribe = event_subscribe(TransacaoID=new_ID, DataTransacao=new_date, TipoPagamento='Federação depósito', StatusTransacao='Em Análise', event_price=price, subscribe_amount=request.POST.get('subscribe_amount'), id_event=new_event, id_user=user)
-				new_subscribe.save()
+
+				INFO = 'TransacaoID=['+str(new_ID)+'] DataTransacao=['+str(new_date)+'] event_price=['+str(price)+'] id_event=['+str(new_event)+'] user='+str(user)
+				log.write("--INFO-- "+INFO)
+
+				yet_subscribe = None
+				try:
+					yet_subscribe_check = event_subscribe.objects.filter(id_event=new_event, id_user=request.user.id )
+					for subscribed in yet_subscribe_check:
+						yet_subscribe = subscribed
+						if subscribed.StatusTransacao.encode('utf-8') == 'Cancelado' or subscribed.StatusTransacao == 'Cancelado':
+							yet_subscribe = None
+							log.write("    -> Existe uma inscricao CANCELADA cadastrada no BD...")
+						else:
+							if subscribed.DataTransacao != new_date:
+								yet_subscribe = None
+
+				except:
+					yet_subscribe = None
+
+				if yet_subscribe is None:
+					log.write("    -> Salvando no BD")
+					new_subscribe.save()
+
 				return direct_to_template(request,'subscribe_finish.html')
 			else:
 
@@ -180,15 +204,30 @@ def pagreturn(request):
 				price = request.POST.get('ProdValor_1').replace(',','.')
 
 
+				INFO = 'TransacaoID=['+str(request.POST.get('TransacaoID'))+'] DataTransacao=['+str(request.POST.get('DataTransacao'))+'] event_price=['+str(price)+'] id_event=['+str(new_event)+'] user='+str(user)
+				log.write("--INFO-- "+INFO)
+
 				yet_saved = None
 				try:
-					yet_subscribe_check = event_subscribe.objects.filter(id_event = int(request.POST.get('ProdID_1')), id_user = request.user.id )
+					log.write("  => Pesquisando inscricoes no BD...")
+					yet_subscribe_check = event_subscribe.objects.filter(id_event = new_event, id_user = user )
 					for subscribed in yet_subscribe_check:
 						yet_saved = subscribed
-						if subscribed.StatusTransacao.encode('utf-8') == 'Cancelado':
+						log.write("  => Encontrada: "+str(subscribed))
+						if subscribed.StatusTransacao.encode('utf-8') == 'Cancelado' or subscribed.StatusTransacao == 'Cancelado':
 							yet_saved = None
-							log.write(" -> Existe uma inscricao CANCELADA cadastrada no BD...")
-				except:
+							log.write("    -> Inscricao CANCELADA cadastrada no BD...")
+						else:
+							if subscribed.TransacaoID == request.POST.get('TransacaoID'):
+								log.write("    -- Inscricao com o mesmo ID no BD. Nao vou salvar...")
+								yet_saved = subscribed
+								break
+							if subscribed.DataTransacao == request.POST.get('DataTransacao'):
+								log.write("    -- Inscricao com a mesma DATA no BD. Nao vou salvar...")
+								yet_saved = subscribed
+								break
+				except Exception, e:
+					log.write('Encontrado ERRO ao processar retorno: '+str(e), level='ERROR')
 					yet_saved = None
 
 				if yet_saved is not None:
