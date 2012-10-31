@@ -5,7 +5,7 @@ import os
 ROOTDIR = os.path.realpath(os.path.dirname(__file__))
 
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 
@@ -187,7 +187,7 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 SYS_NAME = u'Inscrição Metodista'
-SYS_VERSION = '0.6'
+SYS_VERSION = '0.7'
 SYS_URL = 'http://subscribe.cioban.cc'
 
 
