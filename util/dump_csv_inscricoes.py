@@ -19,19 +19,19 @@ from django.contrib.auth.models import User
 
 
 if __name__ == "__main__":
-	lista = open('lista_incricoes.csv', 'wb')
+	lista = open('lista_inscricoes.csv', 'wb')
 	subscribes = event_subscribe.objects.all()
-	header = "TransacaoID, DataTransacao, TipoPagamento, StatusTransacao, VALOR, NOME, EMAIL, DATA_NASCIMENTO, CIDADE, ESTADO, DISTRITO\n"
+	header = "TransacaoID, DataTransacao, TipoPagamento, StatusTransacao, VALOR, NOME, EMAIL, CPF,DATA_NASCIMENTO, CIDADE, ESTADO, DISTRITO\n"
 	lista.write(header)
 	for subscribe in subscribes:
 		user = subscribe.id_user
 		profile = user.userprofile
 
-		DATA = "%s, %s, %s, %s, %s, %s %s, %s, %s, %s, %s, %s\n" % (
+		DATA = "%s, %s, %s, %s, %s, %s %s, %s, %s, %s, %s, %s, %s\n" % (
 				subscribe.TransacaoID, subscribe.DataTransacao, subscribe.TipoPagamento,
 				subscribe.StatusTransacao, subscribe.event_price,
 				user.first_name, user.last_name,
-				user.email, profile.person_date.strftime("%d/%m/%Y"), profile.person_city,
+				user.email, profile.person_cpf, profile.person_date.strftime("%d/%m/%Y"), profile.person_city,
 				profile.person_state,
 				profile.id_district,
 				)

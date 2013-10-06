@@ -87,7 +87,6 @@ class LOG:
 		if logEnable is True:
 			import logging
 			import logging.handlers
-			#log_file = "/axs/traces/ipsecadm.trace"
 			log_file = "/tmp/pagseguro.log"
 
 			self.logger = logging.getLogger('pagseguro')

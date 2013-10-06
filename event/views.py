@@ -106,7 +106,9 @@ def subscribe(request):
 
 			elif (step.isdigit()) and (int(step) == 3):
 				log = LOG(True)
-				log.write("  === Nova inscricao LOCAL ===")
+				LOG_TAG='[LOCAL] '
+				log.write(LOG_TAG+"  === Nova inscricao LOCAL ===")
+				log.write(LOG_TAG+"  ** CLIENT INFO: IP=["+str(request.META['REMOTE_ADDR'])+"] USER AGENT=["+str(request.META['HTTP_USER_AGENT'])+"] **")
 				user = request.user
 				new_event = event.objects.get(pk = request.POST.get('id_event'))
 
@@ -116,25 +118,26 @@ def subscribe(request):
 				new_subscribe = event_subscribe(TransacaoID=new_ID, DataTransacao=new_date, TipoPagamento='Federação depósito', StatusTransacao='Em Análise', event_price=price, subscribe_amount=request.POST.get('subscribe_amount'), id_event=new_event, id_user=user)
 
 				INFO = 'TransacaoID=['+str(new_ID)+'] DataTransacao=['+str(new_date)+'] event_price=['+str(price)+'] id_event=['+str(new_event)+'] user='+str(user)
-				log.write("--INFO-- "+INFO)
+				log.write(LOG_TAG+"--INFO-- "+INFO)
 
 				yet_subscribe = None
 				try:
-					yet_subscribe_check = event_subscribe.objects.filter(id_event=new_event, id_user=request.user.id )
+					yet_subscribe_check = event_subscribe.objects.filter(id_event=new_event, id_user=user)
 					for subscribed in yet_subscribe_check:
 						yet_subscribe = subscribed
 						if subscribed.StatusTransacao.encode('utf-8') == 'Cancelado' or subscribed.StatusTransacao == 'Cancelado':
 							yet_subscribe = None
-							log.write("    -> Existe uma inscricao CANCELADA cadastrada no BD...")
+							log.write(LOG_TAG+"    -> Existe uma inscricao CANCELADA cadastrada no BD...")
 						else:
 							if subscribed.DataTransacao != new_date:
 								yet_subscribe = None
 
-				except:
+				except Exception, e:
+					log.write(LOG_TAG+'Encontrado ERRO ao processar inscricao: '+str(e), level='ERROR')
 					yet_subscribe = None
 
 				if yet_subscribe is None:
-					log.write("    -> Salvando no BD")
+					log.write(LOG_TAG+"    -> Salvando no BD")
 					new_subscribe.save()
 
 				return direct_to_template(request,'subscribe_finish.html')
@@ -166,6 +169,7 @@ def pagreturn(request):
 	"""
 	log = LOG(True)
 	log.write("  === Retorno do PAGSEGURO ===")
+	log.write("  ** CLIENT INFO: IP=["+str(request.META['REMOTE_ADDR'])+"] USER AGENT=["+str(request.META['HTTP_USER_AGENT'])+"] **")
 
 
 	if request.method == 'POST':
